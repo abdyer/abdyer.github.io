@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Music Library on Andy Dyer</title>
-    <link>http://localhost:1313/categories/music-library/</link>
+    <link>http://andydyer.org/categories/music-library/</link>
     <description>Recent content in Music Library on Andy Dyer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2015 Copyright Andy Dyer</copyright>
     <lastBuildDate>Sun, 02 Nov 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/music-library/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://andydyer.org/categories/music-library/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Music Library 3.0 - Material Design Update</title>
-      <link>http://localhost:1313/blog/2014/11/02/music-library-3.0---material-design-update/</link>
+      <link>http://andydyer.org/blog/2014/11/02/music-library-3.0---material-design-update/</link>
       <pubDate>Sun, 02 Nov 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/blog/2014/11/02/music-library-3.0---material-design-update/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/music_library_icon.png&#34; alt=&#34;Music Library&#34; style=&#34;width: 150px; float: left; margin-right: 20px&#34; /&gt;
+      <guid>http://andydyer.org/blog/2014/11/02/music-library-3.0---material-design-update/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://andydyer.org/images/music_library_icon.png&#34; alt=&#34;Music Library&#34; style=&#34;width: 150px; float: left; margin-right: 20px&#34; /&gt;
 I started developing &lt;a href=&#34;https://play.google.com/store/apps/details?id=com.dandydev.medialibrary&#34;&gt;Music Library&lt;/a&gt; about four years ago when I wanted an app for organizing my record collection. Armed with my Nexus One, Eclipse, and a copy of Apress&amp;rsquo; &lt;a href=&#34;http://www.amazon.com/gp/product/1430246804/ref=as_li_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=1430246804&amp;amp;linkCode=as2&amp;amp;tag=slacod-20&amp;amp;linkId=FMLK73AOGDPPJEM3&#34;&gt;Pro Android&lt;/a&gt;, I spent my nights and weekends learning the inner workings of my now-favorite mobile OS.&lt;/p&gt;
 
 &lt;p&gt;Over the years, Music Library has been a playground of sorts for exploring various open source libraries, patterns, and best practices. While there is still a fair amount of code I would write differently today (I&amp;rsquo;m looking at you, ContentProvider), the app has been and continues to be an enjoyable side project.&lt;/p&gt;
@@ -41,18 +41,18 @@ I started developing &lt;a href=&#34;https://play.google.com/store/apps/details?
     &lt;th&gt;Version 3.0 (Material Design)&lt;/th&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-    &lt;td&gt;&lt;a href=&#34;http://localhost:1313/images/music_library_title_list_v2.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/music_library_title_list_v2.png&#34; alt=&#34;Title List v2.x&#34; style=&#34;width: 253px; margin-left: 20px; margin-right: 20px; margin-bottom:20px&#34; /&gt;&lt;/a&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;a href=&#34;http://localhost:1313/images/music_library_title_list_v3.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/music_library_title_list_v3.png&#34; alt=&#34;Title List v3.0&#34; style=&#34;width: 253px; margin-right: 20px; margin-bottom: 20px&#34; /&gt;&lt;/a&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;a href=&#34;http://andydyer.org/images/music_library_title_list_v2.png&#34;&gt;&lt;img src=&#34;http://andydyer.org/images/music_library_title_list_v2.png&#34; alt=&#34;Title List v2.x&#34; style=&#34;width: 253px; margin-left: 20px; margin-right: 20px; margin-bottom:20px&#34; /&gt;&lt;/a&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;a href=&#34;http://andydyer.org/images/music_library_title_list_v3.png&#34;&gt;&lt;img src=&#34;http://andydyer.org/images/music_library_title_list_v3.png&#34; alt=&#34;Title List v3.0&#34; style=&#34;width: 253px; margin-right: 20px; margin-bottom: 20px&#34; /&gt;&lt;/a&gt;&lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-    &lt;td&gt;&lt;a href=&#34;http://localhost:1313/images/music_library_title_edit_v2.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/music_library_title_edit_v2.png&#34; alt=&#34;Title Edit v2.x&#34; style=&#34;width: 253px; margin-left:20px; margin-right: 20px; margin-bottom: 20px&#34; /&gt;&lt;/a&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;a href=&#34;http://localhost:1313/images/music_library_title_edit_v3.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/music_library_title_edit_v3.png&#34; alt=&#34;Title Edit v3.0&#34; style=&#34;width: 253px; margin-right: 20px; margin-bottom: 20px&#34; /&gt;&lt;/a&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;a href=&#34;http://andydyer.org/images/music_library_title_edit_v2.png&#34;&gt;&lt;img src=&#34;http://andydyer.org/images/music_library_title_edit_v2.png&#34; alt=&#34;Title Edit v2.x&#34; style=&#34;width: 253px; margin-left:20px; margin-right: 20px; margin-bottom: 20px&#34; /&gt;&lt;/a&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;a href=&#34;http://andydyer.org/images/music_library_title_edit_v3.png&#34;&gt;&lt;img src=&#34;http://andydyer.org/images/music_library_title_edit_v3.png&#34; alt=&#34;Title Edit v3.0&#34; style=&#34;width: 253px; margin-right: 20px; margin-bottom: 20px&#34; /&gt;&lt;/a&gt;&lt;/td&gt;
   &lt;/tr&gt;
 &lt;/table&gt;
 &lt;br/&gt;
 &lt;div style=&#34;text-align: center&#34;&gt;
     &lt;a href=&#34;https://play.google.com/store/apps/details?id=com.dandydev.medialibrary&#34; title=&#34;Get Music Library&#34;&gt;
-        &lt;img alt=&#34;Get it on Google Play&#34; width=&#34;203&#34; src=&#34;http://localhost:1313/images/google_play_badge@2x.png&#34;&gt;
+        &lt;img alt=&#34;Get it on Google Play&#34; width=&#34;203&#34; src=&#34;http://andydyer.org/images/google_play_badge@2x.png&#34;&gt;
     &lt;/a&gt;
 &lt;/div&gt;&lt;/p&gt;
 </description>

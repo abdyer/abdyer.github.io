@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vinyl on Andy Dyer</title>
-    <link>http://localhost:1313/categories/vinyl/</link>
+    <link>http://andydyer.org/categories/vinyl/</link>
     <description>Recent content in Vinyl on Andy Dyer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2015 Copyright Andy Dyer</copyright>
     <lastBuildDate>Sat, 28 Dec 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/vinyl/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://andydyer.org/categories/vinyl/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Introducing Kollektor</title>
-      <link>http://localhost:1313/blog/2013/12/28/introducing-kollektor/</link>
+      <link>http://andydyer.org/blog/2013/12/28/introducing-kollektor/</link>
       <pubDate>Sat, 28 Dec 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/blog/2013/12/28/introducing-kollektor/</guid>
+      <guid>http://andydyer.org/blog/2013/12/28/introducing-kollektor/</guid>
       <description>
 
 &lt;h5 id=&#34;why-a-new-app:cec02607876d5617fbefee0c6f82b7fe&#34;&gt;Why a new app?&lt;/h5&gt;

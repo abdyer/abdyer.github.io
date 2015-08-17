@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Top 10 on Andy Dyer</title>
-    <link>http://localhost:1313/categories/top-10/</link>
+    <link>http://andydyer.org/categories/top-10/</link>
     <description>Recent content in Top 10 on Andy Dyer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2015 Copyright Andy Dyer</copyright>
     <lastBuildDate>Fri, 26 Dec 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/top-10/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://andydyer.org/categories/top-10/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Top 10 Albums of 2014</title>
-      <link>http://localhost:1313/blog/2014/12/26/top-10-albums-of-2014/</link>
+      <link>http://andydyer.org/blog/2014/12/26/top-10-albums-of-2014/</link>
       <pubDate>Fri, 26 Dec 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/blog/2014/12/26/top-10-albums-of-2014/</guid>
+      <guid>http://andydyer.org/blog/2014/12/26/top-10-albums-of-2014/</guid>
       <description>&lt;p&gt;The end of another year means it&amp;rsquo;s time for the annual Top 10 Favorite Albums list.&lt;/p&gt;
 
 &lt;ol&gt;
@@ -39,10 +39,10 @@
     
     <item>
       <title>Top 10 Albums of 2013</title>
-      <link>http://localhost:1313/blog/2013/12/22/top-10-albums-of-2013/</link>
+      <link>http://andydyer.org/blog/2013/12/22/top-10-albums-of-2013/</link>
       <pubDate>Sun, 22 Dec 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/blog/2013/12/22/top-10-albums-of-2013/</guid>
+      <guid>http://andydyer.org/blog/2013/12/22/top-10-albums-of-2013/</guid>
       <description>&lt;p&gt;Each year, I keep a list of albums that I find myself listening to frequently. This is the time of year when I review the list and pick my top 10. I ventured into hip-hop and electronic music a bit more this year. Psych rock and 90s style fuzz are also well represented.&lt;/p&gt;
 
 &lt;ol&gt;

@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Volley on Andy Dyer</title>
-    <link>http://localhost:1313/categories/volley/</link>
+    <link>http://andydyer.org/categories/volley/</link>
     <description>Recent content in Volley on Andy Dyer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2015 Copyright Andy Dyer</copyright>
     <lastBuildDate>Sun, 15 Dec 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/volley/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://andydyer.org/categories/volley/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Signing Volley Requests with Scribe</title>
-      <link>http://localhost:1313/blog/2013/12/15/signing-volley-requests-with-scribe/</link>
+      <link>http://andydyer.org/blog/2013/12/15/signing-volley-requests-with-scribe/</link>
       <pubDate>Sun, 15 Dec 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/blog/2013/12/15/signing-volley-requests-with-scribe/</guid>
+      <guid>http://andydyer.org/blog/2013/12/15/signing-volley-requests-with-scribe/</guid>
       <description>&lt;p&gt;When I initially needed to integrate OAuth request signing with &lt;a href=&#34;https://android.googlesource.com/platform/frameworks/volley&#34;&gt;Volley&lt;/a&gt; in my Android app, I used the &lt;a href=&#34;https://code.google.com/p/oauth-signpost/&#34;&gt;Signpost library&lt;/a&gt;. It was fairly straightforward to build a URL, pass it to the Signpost OAuthConsumer, and retrieve a new string with the appropriate OAuth parameters added. Unfortunately, as you can see from the &lt;a href=&#34;https://github.com/mttkay/signpost/commits/master&#34;&gt;commit history&lt;/a&gt;, there has been very little activity over the past year.&lt;/p&gt;
 
 &lt;p&gt;Increasingly, I see recommendations for &lt;a href=&#34;https://github.com/fernandezpablo85/scribe-java&#34;&gt;Scribe&lt;/a&gt;. The project is very active and it makes &lt;a href=&#34;https://github.com/fernandezpablo85/scribe-java/wiki/getting-started&#34;&gt;implementing OAuth request signing&lt;/a&gt; as easy as it&amp;rsquo;s likely to get.&lt;/p&gt;

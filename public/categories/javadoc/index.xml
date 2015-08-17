@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Javadoc on Andy Dyer</title>
-    <link>http://localhost:1313/categories/javadoc/</link>
+    <link>http://andydyer.org/categories/javadoc/</link>
     <description>Recent content in Javadoc on Andy Dyer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2015 Copyright Andy Dyer</copyright>
     <lastBuildDate>Thu, 22 Jan 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/javadoc/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://andydyer.org/categories/javadoc/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Running Shell Commands with Gradle and a Better Way to Delombok</title>
-      <link>http://localhost:1313/blog/2015/01/22/running-shell-commands-with-gradle-and-a-better-way-to-delombok/</link>
+      <link>http://andydyer.org/blog/2015/01/22/running-shell-commands-with-gradle-and-a-better-way-to-delombok/</link>
       <pubDate>Thu, 22 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/blog/2015/01/22/running-shell-commands-with-gradle-and-a-better-way-to-delombok/</guid>
+      <guid>http://andydyer.org/blog/2015/01/22/running-shell-commands-with-gradle-and-a-better-way-to-delombok/</guid>
       <description>&lt;p&gt;A few months ago, I &lt;a href=&#34;http://andydyer.org/blog/2014/09/29/delombok-and-javadoc-with-gradle/&#34;&gt;posted&lt;/a&gt; about how to use Gradle tasks to &amp;ldquo;&lt;a href=&#34;http://projectlombok.org/features/delombok.html&#34;&gt;delombok&lt;/a&gt;&amp;rdquo; code using Lombok annotations before generating Javadocs. My solution for running the delombok task used Ant and was based on what I found after the requisite Google &amp;amp; StackOverflow searching. This worked just fine until Android Studio 1.0 and the associated Gradle build tools were released at the end of the year.&lt;/p&gt;
 
 &lt;p&gt;The crux of the problem appeared to be a change in the way dependencies are merged during compilation. Countless &amp;ldquo;package does not exist errors&amp;rdquo; were causing the delombok task to fail. I first attempted to solve this by changing the way the classpath was built in the task. While I was able to reduce the number of errors, I didn&amp;rsquo;t succeed in completely fixing the problem. All the while, running the delombok task directly from the command line with &lt;code&gt;java -jar build-libs/lombok.jar delombok src -d build/src-delomboked&lt;/code&gt; ran successfully.&lt;/p&gt;
@@ -33,10 +33,10 @@
     
     <item>
       <title>Delombok and Javadoc with Gradle</title>
-      <link>http://localhost:1313/blog/2014/09/29/delombok-and-javadoc-with-gradle/</link>
+      <link>http://andydyer.org/blog/2014/09/29/delombok-and-javadoc-with-gradle/</link>
       <pubDate>Mon, 29 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/blog/2014/09/29/delombok-and-javadoc-with-gradle/</guid>
+      <guid>http://andydyer.org/blog/2014/09/29/delombok-and-javadoc-with-gradle/</guid>
       <description>&lt;p&gt;I recently had my first experience working with Javadoc to generate documentation for an SDK I&amp;rsquo;ve been developing at work. In general, I&amp;rsquo;m in the &amp;ldquo;&lt;a href=&#34;http://blog.codinghorror.com/coding-without-comments/&#34;&gt;clean code doesn&amp;rsquo;t need comments&lt;/a&gt;&amp;rdquo; camp, but SDKs tend to be a limited view into a larger abstraction, so good documentation is a necessity.&lt;/p&gt;
 
 &lt;p&gt;Javadoc has been around since the introduction of the Java language, so I won&amp;rsquo;t include a primer here. If you want to learn more, &lt;a href=&#34;http://www.oracle.com/technetwork/java/javase/documentation/javadoc-137458.html&#34;&gt;Oracle has you covered&lt;/a&gt;.&lt;/p&gt;
