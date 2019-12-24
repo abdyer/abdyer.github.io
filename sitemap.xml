@@ -3,12 +3,32 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://andydyer.org/categories/android/</loc>
-    <lastmod>2019-12-22T16:45:32+00:00</lastmod>
+    <loc>http://andydyer.org/</loc>
+    <lastmod>2019-12-23T17:47:45+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://andydyer.org/</loc>
+    <loc>http://andydyer.org/categories/</loc>
+    <lastmod>2019-12-23T17:47:45+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/music/</loc>
+    <lastmod>2019-12-23T17:47:45+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/post/</loc>
+    <lastmod>2019-12-23T17:47:45+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/blog/2019/12/23/top-albums-of-2019/</loc>
+    <lastmod>2019-12-23T17:47:45+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/android/</loc>
     <lastmod>2019-12-22T16:45:32+00:00</lastmod>
   </url>
   
@@ -18,17 +38,7 @@
   </url>
   
   <url>
-    <loc>http://andydyer.org/categories/</loc>
-    <lastmod>2019-12-22T16:45:32+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://andydyer.org/categories/conferences/</loc>
-    <lastmod>2019-12-22T16:45:32+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://andydyer.org/post/</loc>
     <lastmod>2019-12-22T16:45:32+00:00</lastmod>
   </url>
   
@@ -80,11 +90,6 @@
   <url>
     <loc>http://andydyer.org/blog/2016/03/18/things-that-suck-about-android-development/</loc>
     <lastmod>2016-03-18T13:17:48+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://andydyer.org/categories/music/</loc>
-    <lastmod>2016-01-02T14:38:02-06:00</lastmod>
   </url>
   
   <url>
