@@ -1,10 +1,95 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://andydyer.org/categories/android/</loc>
+    <lastmod>2019-12-22T16:45:32+00:00</lastmod>
+  </url>
   
   <url>
     <loc>http://andydyer.org/</loc>
+    <lastmod>2019-12-22T16:45:32+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/blog/2019/12/22/appcraft-faster-than-a-speeding-release-train/</loc>
+    <lastmod>2019-12-22T16:45:32+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/</loc>
+    <lastmod>2019-12-22T16:45:32+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/conferences/</loc>
+    <lastmod>2019-12-22T16:45:32+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/post/</loc>
+    <lastmod>2019-12-22T16:45:32+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/speaking/</loc>
+    <lastmod>2019-12-22T16:45:32+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/apps/</loc>
+    <lastmod>2017-12-24T20:53:35+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/blog/2017/12/24/introducing-biografy/</loc>
+    <lastmod>2017-12-24T20:53:35+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/blog/2017/11/27/react-native-is-it-worth-it/</loc>
+    <lastmod>2017-11-27T21:35:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/berlin/</loc>
+    <lastmod>2017-09-23T12:45:48+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/life/</loc>
+    <lastmod>2017-09-23T12:45:48+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/blog/2017/09/23/things-ive-learned-since-moving-to-berlin/</loc>
+    <lastmod>2017-09-23T12:45:48+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/blog/2017/02/02/aufwiedersehen-houston-hallo-berlin/</loc>
+    <lastmod>2017-02-02T13:06:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/blog/2016/10/22/multiple-developers-one-app-how-to-not-break-everything/</loc>
+    <lastmod>2016-10-22T13:00:39-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/blog/2016/03/18/things-that-suck-about-android-development/</loc>
+    <lastmod>2016-03-18T13:17:48+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/music/</loc>
     <lastmod>2016-01-02T14:38:02-06:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/top-10/</loc>
+    <lastmod>2016-01-02T14:38:02-06:00</lastmod>
   </url>
   
   <url>
@@ -13,8 +98,23 @@
   </url>
   
   <url>
+    <loc>http://andydyer.org/categories/material-design/</loc>
+    <lastmod>2015-06-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://andydyer.org/blog/2015/06/28/using-a-third-party-fab-with-coordinatorlayout/</loc>
     <lastmod>2015-06-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/career/</loc>
+    <lastmod>2015-06-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/google/</loc>
+    <lastmod>2015-06-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -28,13 +128,33 @@
   </url>
   
   <url>
+    <loc>http://andydyer.org/categories/phones/</loc>
+    <lastmod>2015-02-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://andydyer.org/blog/2015/02/19/why-im-unironically-carrying-this-small-older-android-phone/</loc>
     <lastmod>2015-02-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://andydyer.org/blog/2015/02/08/mce-conference-2015---automated-testing-for-modern-android-applications/</loc>
+    <loc>http://andydyer.org/blog/2015/02/08/mce-conference-2015-automated-testing-for-modern-android-applications/</loc>
     <lastmod>2015-02-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/gradle/</loc>
+    <lastmod>2015-01-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/javadoc/</loc>
+    <lastmod>2015-01-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/lombok/</loc>
+    <lastmod>2015-01-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -48,17 +168,42 @@
   </url>
   
   <url>
-    <loc>http://andydyer.org/blog/2014/11/02/music-library-3.0---material-design-update/</loc>
+    <loc>http://andydyer.org/categories/lollipop/</loc>
     <lastmod>2014-11-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://andydyer.org/blog/2014/10/17/babbq5---automated-testing-for-modern-android-applications/</loc>
+    <loc>http://andydyer.org/categories/music-library/</loc>
+    <lastmod>2014-11-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/blog/2014/11/02/music-library-3.0-material-design-update/</loc>
+    <lastmod>2014-11-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/ui/</loc>
+    <lastmod>2014-11-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/blog/2014/10/17/babbq5-automated-testing-for-modern-android-applications/</loc>
     <lastmod>2014-10-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
+    <loc>http://andydyer.org/categories/github/</loc>
+    <lastmod>2014-10-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://andydyer.org/blog/2014/10/05/hosting-android-dependencies-on-github/</loc>
+    <lastmod>2014-10-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/maven/</loc>
     <lastmod>2014-10-05T00:00:00+00:00</lastmod>
   </url>
   
@@ -68,8 +213,28 @@
   </url>
   
   <url>
+    <loc>http://andydyer.org/categories/android-l/</loc>
+    <lastmod>2014-07-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://andydyer.org/blog/2014/07/13/androids-material-design-and-the-bauhaus/</loc>
     <lastmod>2014-07-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/design/</loc>
+    <lastmod>2014-07-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/android-wear/</loc>
+    <lastmod>2014-07-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/deutsch-uhr/</loc>
+    <lastmod>2014-07-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -78,8 +243,33 @@
   </url>
   
   <url>
+    <loc>http://andydyer.org/categories/pebble/</loc>
+    <lastmod>2014-07-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/wrist-presenter/</loc>
+    <lastmod>2014-07-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/chaione-blog/</loc>
+    <lastmod>2014-06-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/google-i/o/</loc>
+    <lastmod>2014-06-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://andydyer.org/blog/2014/06/28/google-i/o-2014-an-android-developers-perspective/</loc>
     <lastmod>2014-06-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/droidcon-berlin/</loc>
+    <lastmod>2014-05-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -103,12 +293,32 @@
   </url>
   
   <url>
+    <loc>http://andydyer.org/categories/kollektor/</loc>
+    <lastmod>2013-12-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/vinyl/</loc>
+    <lastmod>2013-12-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://andydyer.org/blog/2013/12/22/top-10-albums-of-2013/</loc>
     <lastmod>2013-12-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
+    <loc>http://andydyer.org/categories/oauth/</loc>
+    <lastmod>2013-12-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://andydyer.org/blog/2013/12/15/signing-volley-requests-with-scribe/</loc>
+    <lastmod>2013-12-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/volley/</loc>
     <lastmod>2013-12-15T00:00:00+00:00</lastmod>
   </url>
   
@@ -123,13 +333,18 @@
   </url>
   
   <url>
-    <loc>http://andydyer.org/blog/2013/10/11/big-android-bbq-2013---android-open-source-libraries-you-need-in-your-life/</loc>
+    <loc>http://andydyer.org/blog/2013/10/11/big-android-bbq-2013-android-open-source-libraries-you-need-in-your-life/</loc>
     <lastmod>2013-10-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://andydyer.org/blog/2013/09/28/houston-techfest-intro-to-android-programming/</loc>
     <lastmod>2013-09-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/meetups/</loc>
+    <lastmod>2013-08-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -153,8 +368,38 @@
   </url>
   
   <url>
+    <loc>http://andydyer.org/categories/functional-programming/</loc>
+    <lastmod>2012-02-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/javascript/</loc>
+    <lastmod>2012-02-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/i-go-to-a-lot-of-concerts/</loc>
+    <lastmod>2010-12-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://andydyer.org/blog/2010/12/28/my-top-10-albums-of-2010/</loc>
     <lastmod>2010-12-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/top-10-albums/</loc>
+    <lastmod>2010-12-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/chillaxation/</loc>
+    <lastmod>2010-11-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/have-a-holly-jolly-christmas/</loc>
+    <lastmod>2010-11-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -163,8 +408,33 @@
   </url>
   
   <url>
+    <loc>http://andydyer.org/categories/vacation-galore/</loc>
+    <lastmod>2010-11-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/canada/</loc>
+    <lastmod>2010-07-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/eh/</loc>
+    <lastmod>2010-07-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://andydyer.org/blog/2010/07/07/indie-rock-mix-cd-for-my-canada/montreal-trip/</loc>
     <lastmod>2010-07-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/flaming-lips/</loc>
+    <lastmod>2010-01-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/ill-see-you-on-the-dark-side-of-the-moon/</loc>
+    <lastmod>2010-01-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -173,8 +443,23 @@
   </url>
   
   <url>
+    <loc>http://andydyer.org/categories/new-years-eve/</loc>
+    <lastmod>2010-01-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/pink-floyd/</loc>
+    <lastmod>2010-01-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://andydyer.org/blog/2009/04/19/bands-ive-seen-live/</loc>
-    <lastmod>2009-04-19T00:00:00+00:00</lastmod>
+    <lastmod>2009-04-19T09:12:31+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/ticketmaster-sucks-but-live-music-is-worth-getting-robbed/</loc>
+    <lastmod>2009-04-19T09:12:31+00:00</lastmod>
   </url>
   
   <url>
@@ -183,8 +468,33 @@
   </url>
   
   <url>
+    <loc>http://andydyer.org/categories/happiness-is-a-warm-gun...err-byproduct/</loc>
+    <lastmod>2009-01-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/acl/</loc>
+    <lastmod>2008-11-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/i-just-felt-like-runnin/</loc>
+    <lastmod>2008-11-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://andydyer.org/blog/2008/11/08/my-latest-adventures/</loc>
     <lastmod>2008-11-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/tylenol-snot-buckets-is-a-great-idea/</loc>
+    <lastmod>2008-11-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/hurricanes/</loc>
+    <lastmod>2008-09-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -193,8 +503,28 @@
   </url>
   
   <url>
-    <loc>http://andydyer.org/blog/2008/07/20/my-epic-17-mile-run--other-moderately-fascinating-stuff/</loc>
+    <loc>http://andydyer.org/categories/oklahoma-is-only-better-than-texas-when-theres-no-electricity/</loc>
+    <lastmod>2008-09-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/3500-calories-is-about-23-beers/</loc>
     <lastmod>2008-07-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/blog/2008/07/20/my-epic-17-mile-run-other-moderately-fascinating-stuff/</loc>
+    <lastmod>2008-07-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/only-crazy-people-run-in-the-houston-heat/</loc>
+    <lastmod>2008-07-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/stone-temple-pilots/</loc>
+    <lastmod>2008-07-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -203,13 +533,73 @@
   </url>
   
   <url>
+    <loc>http://andydyer.org/categories/why-do-they-charge-so-much-for-stuff-at-large-concert-venues/</loc>
+    <lastmod>2008-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/records-are-cool-for-being-so-old/</loc>
+    <lastmod>2008-06-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://andydyer.org/blog/2008/06/21/vinyl-lp-record-is-60-years-old-today/</loc>
     <lastmod>2008-06-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://andydyer.org/blog/2008/06/15/mates-of-state-concert--restaurant-stuff/</loc>
+    <loc>http://andydyer.org/categories/cafe-artiste/</loc>
     <lastmod>2008-06-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/coffee/</loc>
+    <lastmod>2008-06-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/korean-food/</loc>
+    <lastmod>2008-06-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/mates-of-state/</loc>
+    <lastmod>2008-06-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/blog/2008/06/15/mates-of-state-concert-restaurant-stuff/</loc>
+    <lastmod>2008-06-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/onion-creek/</loc>
+    <lastmod>2008-06-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/saint-arnold/</loc>
+    <lastmod>2008-06-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/warehouse-live/</loc>
+    <lastmod>2008-06-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/born-ruffians/</loc>
+    <lastmod>2008-06-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/cactus-records/</loc>
+    <lastmod>2008-06-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/french-kicks/</loc>
+    <lastmod>2008-06-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -218,8 +608,63 @@
   </url>
   
   <url>
-    <loc>http://andydyer.org/blog/2008/06/05/shampoo-for-my-shaved-head--a-lesson-in-the-metric-system/</loc>
+    <loc>http://andydyer.org/categories/spoon/</loc>
+    <lastmod>2008-06-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/walters-on-washington/</loc>
+    <lastmod>2008-06-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/young-mammals/</loc>
+    <lastmod>2008-06-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/blog/2008/06/05/shampoo-for-my-shaved-head-a-lesson-in-the-metric-system/</loc>
     <lastmod>2008-06-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/shaved-heads-are-so-much-less-work/</loc>
+    <lastmod>2008-06-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/the-power-of-the-metric-system-lies-in-understanding-the-prefixes/</loc>
+    <lastmod>2008-06-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/flying-saucer/</loc>
+    <lastmod>2008-06-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/houston-skate-park/</loc>
+    <lastmod>2008-06-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/indiana-jones/</loc>
+    <lastmod>2008-06-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/old-97s/</loc>
+    <lastmod>2008-06-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/southern-star-brewing/</loc>
+    <lastmod>2008-06-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/the-flying-tomato/</loc>
+    <lastmod>2008-06-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -228,13 +673,78 @@
   </url>
   
   <url>
+    <loc>http://andydyer.org/categories/30th-birthday/</loc>
+    <lastmod>2008-05-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/he-man/</loc>
+    <lastmod>2008-05-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://andydyer.org/blog/2008/05/07/thoughts-on-30/</loc>
     <lastmod>2008-05-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://andydyer.org/blog/2008/05/04/camping--pace-bend--a-new-personal-record-for-downhill-speed/</loc>
+    <loc>http://andydyer.org/categories/transformers/</loc>
+    <lastmod>2008-05-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/words-of-wisdom/</loc>
+    <lastmod>2008-05-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/austin/</loc>
     <lastmod>2008-05-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/bicycling/</loc>
+    <lastmod>2008-05-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/camping/</loc>
+    <lastmod>2008-05-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/blog/2008/05/04/camping-pace-bend-a-new-personal-record-for-downhill-speed/</loc>
+    <lastmod>2008-05-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/cuban-cigar/</loc>
+    <lastmod>2008-05-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/lake-travis/</loc>
+    <lastmod>2008-05-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/magnolia-cafe/</loc>
+    <lastmod>2008-05-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/pace-bend-park/</loc>
+    <lastmod>2008-05-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/sierra-nevada/</loc>
+    <lastmod>2008-05-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/bicycling-saturday/</loc>
+    <lastmod>2008-04-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -243,13 +753,27 @@
   </url>
   
   <url>
-    <loc>http://andydyer.org/blog/2008/04/18/son-volt-with-bobby-bare-jr.--the-continental-club-negativland--rices-aurora-picture-show/</loc>
+    <loc>http://andydyer.org/categories/son-volt-bobby-bare-jr-negativland-rice/</loc>
+    <lastmod>2008-04-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/blog/2008/04/18/son-volt-with-bobby-bare-jr.-the-continental-club-negativland-rices-aurora-picture-show/</loc>
     <lastmod>2008-04-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://andydyer.org/blog/2008/04/15/all-the-cool-kids-are-doing-it/</loc>
     <lastmod>2008-04-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/categories/welcome-dammit-andy-first-blog-entry/</loc>
+    <lastmod>2008-04-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andydyer.org/tags/</loc>
   </url>
   
 </urlset>
