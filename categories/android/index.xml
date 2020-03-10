@@ -6,10 +6,20 @@
     <description>Recent content in Android on Andy Dyer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 22 Dec 2019 16:45:32 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Mar 2020 10:30:55 +0100</lastBuildDate>
     
 	<atom:link href="http://andydyer.org/categories/android/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Jetpack Benchmark on Firebase Test Lab</title>
+      <link>http://andydyer.org/blog/2020/03/06/jetpack-benchmark-on-firebase-test-lab/</link>
+      <pubDate>Fri, 06 Mar 2020 10:30:55 +0100</pubDate>
+      
+      <guid>http://andydyer.org/blog/2020/03/06/jetpack-benchmark-on-firebase-test-lab/</guid>
+      <description>As previously outlined in my talk at Mobius Conference in Saint Petersburg last year, our team at Zalando is building a server-driven UI platform we call AppCraft. AppCraft allows us to add or update screens in our app with only server changes instead of the normal app release constrained way of doing things.
+On the client side, we are building every screen the same way: fetch layout &amp;amp; data from the server, parse it, and render it.</description>
+    </item>
     
     <item>
       <title>AppCraft: Faster Than a Speeding Release Train</title>
