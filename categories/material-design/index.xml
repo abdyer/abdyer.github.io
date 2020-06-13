@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Material Design on Andy Dyer</title>
-    <link>http://andydyer.org/categories/material-design/</link>
+    <link>https://andydyer.org/categories/material-design/</link>
     <description>Recent content in Material Design on Andy Dyer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 28 Jun 2015 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://andydyer.org/categories/material-design/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://andydyer.org/categories/material-design/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Using a Third Party FAB with CoordinatorLayout</title>
-      <link>http://andydyer.org/blog/2015/06/28/using-a-third-party-fab-with-coordinatorlayout/</link>
+      <link>https://andydyer.org/blog/2015/06/28/using-a-third-party-fab-with-coordinatorlayout/</link>
       <pubDate>Sun, 28 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://andydyer.org/blog/2015/06/28/using-a-third-party-fab-with-coordinatorlayout/</guid>
+      <guid>https://andydyer.org/blog/2015/06/28/using-a-third-party-fab-with-coordinatorlayout/</guid>
       <description>Before the Design Support Library was announced at Google I/O last month, I had numerous third party libraries in my projects for various elements of Material Design. I&#39;ve enjoyed replacing the nav drawer, tabs, and parallax scrolling libraries with their support library counterparts. However, on one of my projects, we needed an expanding floating action button (FAB) similar to the one in Inbox, which the support library does not currently provide.</description>
     </item>
     
     <item>
       <title>Music Library 3.0 - Material Design Update</title>
-      <link>http://andydyer.org/blog/2014/11/02/music-library-3.0-material-design-update/</link>
+      <link>https://andydyer.org/blog/2014/11/02/music-library-3.0-material-design-update/</link>
       <pubDate>Sun, 02 Nov 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://andydyer.org/blog/2014/11/02/music-library-3.0-material-design-update/</guid>
+      <guid>https://andydyer.org/blog/2014/11/02/music-library-3.0-material-design-update/</guid>
       <description>I started developing Music Library about four years ago when I wanted an app for organizing my record collection. Armed with my Nexus One, Eclipse, and a copy of Apress&amp;rsquo; Pro Android, I spent my nights and weekends learning the inner workings of my now-favorite mobile OS.
 Over the years, Music Library has been a playground of sorts for exploring various open source libraries, patterns, and best practices. While there is still a fair amount of code I would write differently today (I&#39;m looking at you, ContentProvider), the app has been and continues to be an enjoyable side project.</description>
     </item>
     
     <item>
       <title>Android&#39;s Material Design and The Bauhaus</title>
-      <link>http://andydyer.org/blog/2014/07/13/androids-material-design-and-the-bauhaus/</link>
+      <link>https://andydyer.org/blog/2014/07/13/androids-material-design-and-the-bauhaus/</link>
       <pubDate>Sun, 13 Jul 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://andydyer.org/blog/2014/07/13/androids-material-design-and-the-bauhaus/</guid>
+      <guid>https://andydyer.org/blog/2014/07/13/androids-material-design-and-the-bauhaus/</guid>
       <description>Since Android Gingerbread (v2.3), loyalists know that each version has an Easter egg that can be accessed by repeatedly tapping the version number on the Settings &amp;gt; About screen. The Android &amp;ldquo;L&amp;rdquo; Preview is no exception.
 While test driving the new version, I naturally had to see what Google had hidden for me in their latest release. Previous versions have had everything from gingerbread zombies to Nyandroids and a pile of jelly beans.</description>
     </item>

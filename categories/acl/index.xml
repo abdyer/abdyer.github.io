@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ACL on Andy Dyer</title>
-    <link>http://andydyer.org/categories/acl/</link>
+    <link>https://andydyer.org/categories/acl/</link>
     <description>Recent content in ACL on Andy Dyer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 08 Nov 2008 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://andydyer.org/categories/acl/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://andydyer.org/categories/acl/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>My latest adventures</title>
-      <link>http://andydyer.org/blog/2008/11/08/my-latest-adventures/</link>
+      <link>https://andydyer.org/blog/2008/11/08/my-latest-adventures/</link>
       <pubDate>Sat, 08 Nov 2008 00:00:00 +0000</pubDate>
       
-      <guid>http://andydyer.org/blog/2008/11/08/my-latest-adventures/</guid>
+      <guid>https://andydyer.org/blog/2008/11/08/my-latest-adventures/</guid>
       <description>Again, too long between blog posts. My faithful readers are clammoring for more of my adventures. Right? Well, most likely not, but here it goes...
  First, Jamie and I went to the ACL Festival in Austin about a month ago. It was the first time to go for both of us and we saw a ton of great bands including Vampire Weekend, Bobby Bare Jr, Mates of State, Jenny Lewis, Old 97&#39;s, Jose Gonzalez, Drive-By Truckers, Cansei de ser Sexy (CSS), MGMT, Conor Oberst, and Beck.</description>
     </item>

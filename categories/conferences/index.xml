@@ -2,50 +2,50 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Conferences on Andy Dyer</title>
-    <link>http://andydyer.org/categories/conferences/</link>
+    <link>https://andydyer.org/categories/conferences/</link>
     <description>Recent content in Conferences on Andy Dyer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 22 Dec 2019 16:45:32 +0000</lastBuildDate>
     
-	<atom:link href="http://andydyer.org/categories/conferences/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://andydyer.org/categories/conferences/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>AppCraft: Faster Than a Speeding Release Train</title>
-      <link>http://andydyer.org/blog/2019/12/22/appcraft-faster-than-a-speeding-release-train/</link>
+      <link>https://andydyer.org/blog/2019/12/22/appcraft-faster-than-a-speeding-release-train/</link>
       <pubDate>Sun, 22 Dec 2019 16:45:32 +0000</pubDate>
       
-      <guid>http://andydyer.org/blog/2019/12/22/appcraft-faster-than-a-speeding-release-train/</guid>
+      <guid>https://andydyer.org/blog/2019/12/22/appcraft-faster-than-a-speeding-release-train/</guid>
       <description>It was a pleasure speaking at Mobius Conference in Saint Petersburg this past May. I never got around to finishing the transcript of the talk I intended to write, but you can find the slides on Speaker Deck and the video on YouTube:
    </description>
     </item>
     
     <item>
       <title>React Native: Is It Worth It?</title>
-      <link>http://andydyer.org/blog/2017/11/27/react-native-is-it-worth-it/</link>
+      <link>https://andydyer.org/blog/2017/11/27/react-native-is-it-worth-it/</link>
       <pubDate>Mon, 27 Nov 2017 21:35:15 +0000</pubDate>
       
-      <guid>http://andydyer.org/blog/2017/11/27/react-native-is-it-worth-it/</guid>
+      <guid>https://andydyer.org/blog/2017/11/27/react-native-is-it-worth-it/</guid>
       <description>Intro When new technologies start gaining momentum in the Android community, the pragmatic (or lazy) among us eventually have to ask ourselves, “Is it worth it?” After the initial arrival and departure of the hype train, some of these become trusted tools we use in almost every app. Think RxJava and Dagger.
 React Native may be on its way to earning a place in the same club. Once we get past the fact that JavaScript on Android and HTML in JavaScript seem pretty damn weird at first, there’s a lot to like.</description>
     </item>
     
     <item>
       <title>Multiple Developers, One App: How to Not Break Everything</title>
-      <link>http://andydyer.org/blog/2016/10/22/multiple-developers-one-app-how-to-not-break-everything/</link>
+      <link>https://andydyer.org/blog/2016/10/22/multiple-developers-one-app-how-to-not-break-everything/</link>
       <pubDate>Sat, 22 Oct 2016 13:00:39 -0500</pubDate>
       
-      <guid>http://andydyer.org/blog/2016/10/22/multiple-developers-one-app-how-to-not-break-everything/</guid>
+      <guid>https://andydyer.org/blog/2016/10/22/multiple-developers-one-app-how-to-not-break-everything/</guid>
       <description>This was my third time attending the Big Android BBQ in Hurst, TX and my third time to present at it. Perhaps my favorite thing about the conference (aside from the obvious BBQ) is reconnecting with old friends and making new ones. This year I&#39;ve had the pleasure of meeting people from all over the world and learning that we know a lot of the same people. Small world, indeed.</description>
     </item>
     
     <item>
       <title>Things That Suck About Android Development</title>
-      <link>http://andydyer.org/blog/2016/03/18/things-that-suck-about-android-development/</link>
+      <link>https://andydyer.org/blog/2016/03/18/things-that-suck-about-android-development/</link>
       <pubDate>Fri, 18 Mar 2016 13:17:48 +0100</pubDate>
       
-      <guid>http://andydyer.org/blog/2016/03/18/things-that-suck-about-android-development/</guid>
+      <guid>https://andydyer.org/blog/2016/03/18/things-that-suck-about-android-development/</guid>
       <description>I presented &amp;ldquo;Things That Suck About Android Development&amp;rdquo; at this year&#39;s mdevcon conference in Amsterdam. It&#39;s a great conference in an amazing city. I highly recommend it to anyone developing mobile apps.
 The title is admittedly a bit sensational, but my goal was to highlight many of the painful parts about developing for Android and how to avoid/fix them.
 Here are the slides!
@@ -54,67 +54,67 @@ Here are the slides!
     
     <item>
       <title>MCE Conference 2015 - Automated Testing for Modern Android Applications</title>
-      <link>http://andydyer.org/blog/2015/02/08/mce-conference-2015-automated-testing-for-modern-android-applications/</link>
+      <link>https://andydyer.org/blog/2015/02/08/mce-conference-2015-automated-testing-for-modern-android-applications/</link>
       <pubDate>Sun, 08 Feb 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://andydyer.org/blog/2015/02/08/mce-conference-2015-automated-testing-for-modern-android-applications/</guid>
+      <guid>https://andydyer.org/blog/2015/02/08/mce-conference-2015-automated-testing-for-modern-android-applications/</guid>
       <description>It was an honor to speak at and attend MCE Conference in Warsaw last week. I participated in a workshop where I learned about prototyping with Android and Arduinos. I attended talks about Groovy, Kotlin, Proguard, design, scaling apps for emerging markets, and some handy new libraries.
 That alone easily makes MCE one of the best conferences I&#39;ve been to. On top of all that, the networking with fellow speakers and attendees was a personal highlight.</description>
     </item>
     
     <item>
       <title>BABBQ5 - Automated Testing for Modern Android Applications</title>
-      <link>http://andydyer.org/blog/2014/10/17/babbq5-automated-testing-for-modern-android-applications/</link>
+      <link>https://andydyer.org/blog/2014/10/17/babbq5-automated-testing-for-modern-android-applications/</link>
       <pubDate>Fri, 17 Oct 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://andydyer.org/blog/2014/10/17/babbq5-automated-testing-for-modern-android-applications/</guid>
+      <guid>https://andydyer.org/blog/2014/10/17/babbq5-automated-testing-for-modern-android-applications/</guid>
       <description>This is my third year to attend and present at the Big Android BBQ. My talk this year showed how to prepare an Android app for automated testing using mocking, dependency injection, and Google&#39;s super fast Espresso test runner. You can find the presentation on Speaker Deck and the sample code on GitHub. 
  </description>
     </item>
     
     <item>
       <title>Droidcon Berlin 2014: Froyo to KitKat</title>
-      <link>http://andydyer.org/blog/2014/05/09/droidcon-berlin-2014-froyo-to-kitkat/</link>
+      <link>https://andydyer.org/blog/2014/05/09/droidcon-berlin-2014-froyo-to-kitkat/</link>
       <pubDate>Fri, 09 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://andydyer.org/blog/2014/05/09/droidcon-berlin-2014-froyo-to-kitkat/</guid>
+      <guid>https://andydyer.org/blog/2014/05/09/droidcon-berlin-2014-froyo-to-kitkat/</guid>
       <description>I&#39;m thrilled to be speaking at Droidcon Berlin this year. I fell in love with the city on my first visit and the conference was a perfect reason for another visit. Attempts to try out my very basic German skills have shown me that I have a long way to go. However, I am proud to say that I have managed to make a few purchases without panicking and falling back to English.</description>
     </item>
     
     <item>
       <title>Presenting: Wrist Presenter for Android and the Pebble Smartwatch</title>
-      <link>http://andydyer.org/blog/2014/03/07/presenting-wrist-presenter-for-android-and-the-pebble-smartwatch/</link>
+      <link>https://andydyer.org/blog/2014/03/07/presenting-wrist-presenter-for-android-and-the-pebble-smartwatch/</link>
       <pubDate>Fri, 07 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://andydyer.org/blog/2014/03/07/presenting-wrist-presenter-for-android-and-the-pebble-smartwatch/</guid>
+      <guid>https://andydyer.org/blog/2014/03/07/presenting-wrist-presenter-for-android-and-the-pebble-smartwatch/</guid>
       <description>Shortly after getting a Pebble Smartwatch this past Christmas, my coworker and all-around-cool-dude Matthew Morey asked me if I&#39;d be interested in developing the Android version of his Wrist Presenter iOS app. Luckily, he already had a rock solid Pebble app developed, so I didn&#39;t have to flex my meager C programming skills.
 Wrist Presenter turns your Pebble Smartwatch into a remote for presentations running on your Android or iOS device.</description>
     </item>
     
     <item>
       <title>TechStreet Houston: Intro to Android Programming</title>
-      <link>http://andydyer.org/blog/2013/11/20/techstreet-houston-intro-to-android-programming/</link>
+      <link>https://andydyer.org/blog/2013/11/20/techstreet-houston-intro-to-android-programming/</link>
       <pubDate>Wed, 20 Nov 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://andydyer.org/blog/2013/11/20/techstreet-houston-intro-to-android-programming/</guid>
+      <guid>https://andydyer.org/blog/2013/11/20/techstreet-houston-intro-to-android-programming/</guid>
       <description>I&#39;m giving another Intro to Android Programming talk at TechStreet Houston today. The slides are very similar to my previous talk at Houston TechFest, but here is the link for today&#39;s presentation.</description>
     </item>
     
     <item>
       <title>Things I Learned at Big Android BBQ 2013</title>
-      <link>http://andydyer.org/blog/2013/10/13/things-i-learned-at-big-android-bbq-2013/</link>
+      <link>https://andydyer.org/blog/2013/10/13/things-i-learned-at-big-android-bbq-2013/</link>
       <pubDate>Sun, 13 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://andydyer.org/blog/2013/10/13/things-i-learned-at-big-android-bbq-2013/</guid>
+      <guid>https://andydyer.org/blog/2013/10/13/things-i-learned-at-big-android-bbq-2013/</guid>
       <description>T-Mobile reception is still terrible at the conference center. Alcohol purchases spike in the City of Hurst as a result of the conference. The guys from Willow Tree Apps have released some awesome Android open source libraries (BetterPickers, OAK, and RPatch) It&#39;s worth the short drive to Roots Coffee each morning. High Roller makes adult size big wheels. They are a ton of fun to ride. Oppo makes some pretty sweet phones.</description>
     </item>
     
     <item>
       <title>Big Android BBQ 2013 - Android Open Source Libraries You Need in Your Life</title>
-      <link>http://andydyer.org/blog/2013/10/11/big-android-bbq-2013-android-open-source-libraries-you-need-in-your-life/</link>
+      <link>https://andydyer.org/blog/2013/10/11/big-android-bbq-2013-android-open-source-libraries-you-need-in-your-life/</link>
       <pubDate>Fri, 11 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://andydyer.org/blog/2013/10/11/big-android-bbq-2013-android-open-source-libraries-you-need-in-your-life/</guid>
+      <guid>https://andydyer.org/blog/2013/10/11/big-android-bbq-2013-android-open-source-libraries-you-need-in-your-life/</guid>
       <description>This is my second year to speak at the Big Android BBQ in Hurst, TX. My talk covered a slew of handy open source libraries to accelerate the development of modern Android applications.
 The slides are available on Google Drive.
 I&#39;m having a blast at the conference. The sessions so far have been great. I hope to see all of you here again next year!</description>
@@ -122,10 +122,10 @@ I&#39;m having a blast at the conference. The sessions so far have been great. I
     
     <item>
       <title>Houston TechFest: Intro to Android Programming</title>
-      <link>http://andydyer.org/blog/2013/09/28/houston-techfest-intro-to-android-programming/</link>
+      <link>https://andydyer.org/blog/2013/09/28/houston-techfest-intro-to-android-programming/</link>
       <pubDate>Sat, 28 Sep 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://andydyer.org/blog/2013/09/28/houston-techfest-intro-to-android-programming/</guid>
+      <guid>https://andydyer.org/blog/2013/09/28/houston-techfest-intro-to-android-programming/</guid>
       <description>I gave an Intro to Android Programming presentation today at Houston TechFest. The slides are available on Google Drive.
 Thanks to everyone who attended. Keep Android trill!</description>
     </item>

@@ -2,41 +2,41 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Gradle on Andy Dyer</title>
-    <link>http://andydyer.org/categories/gradle/</link>
+    <link>https://andydyer.org/categories/gradle/</link>
     <description>Recent content in Gradle on Andy Dyer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 22 Jan 2015 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://andydyer.org/categories/gradle/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://andydyer.org/categories/gradle/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Running Shell Commands with Gradle and a Better Way to Delombok</title>
-      <link>http://andydyer.org/blog/2015/01/22/running-shell-commands-with-gradle-and-a-better-way-to-delombok/</link>
+      <link>https://andydyer.org/blog/2015/01/22/running-shell-commands-with-gradle-and-a-better-way-to-delombok/</link>
       <pubDate>Thu, 22 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://andydyer.org/blog/2015/01/22/running-shell-commands-with-gradle-and-a-better-way-to-delombok/</guid>
+      <guid>https://andydyer.org/blog/2015/01/22/running-shell-commands-with-gradle-and-a-better-way-to-delombok/</guid>
       <description>A few months ago, I posted about how to use Gradle tasks to &amp;ldquo;delombok&amp;rdquo; code using Lombok annotations before generating Javadocs. My solution for running the delombok task used Ant and was based on what I found after the requisite Google &amp;amp; StackOverflow searching. This worked just fine until Android Studio 1.0 and the associated Gradle build tools were released at the end of the year.
 The crux of the problem appeared to be a change in the way dependencies are merged during compilation.</description>
     </item>
     
     <item>
       <title>Hosting Android Dependencies on GitHub</title>
-      <link>http://andydyer.org/blog/2014/10/05/hosting-android-dependencies-on-github/</link>
+      <link>https://andydyer.org/blog/2014/10/05/hosting-android-dependencies-on-github/</link>
       <pubDate>Sun, 05 Oct 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://andydyer.org/blog/2014/10/05/hosting-android-dependencies-on-github/</guid>
+      <guid>https://andydyer.org/blog/2014/10/05/hosting-android-dependencies-on-github/</guid>
       <description>As I mentioned in my last post, I&#39;m developing an SDK at work. The libraries I use most frequently in my apps are all included as Maven dependencies. Adding a line to my build.gradle file is much preferred to downloading a JAR file. To make the SDK as easy as possible for developers to include in their projects, I wanted to deliver it the same way.
 Maven Central is the de facto repository for open source library hosting.</description>
     </item>
     
     <item>
       <title>Delombok and Javadoc with Gradle</title>
-      <link>http://andydyer.org/blog/2014/09/29/delombok-and-javadoc-with-gradle/</link>
+      <link>https://andydyer.org/blog/2014/09/29/delombok-and-javadoc-with-gradle/</link>
       <pubDate>Mon, 29 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://andydyer.org/blog/2014/09/29/delombok-and-javadoc-with-gradle/</guid>
+      <guid>https://andydyer.org/blog/2014/09/29/delombok-and-javadoc-with-gradle/</guid>
       <description>I recently had my first experience working with Javadoc to generate documentation for an SDK I&#39;ve been developing at work. In general, I&#39;m in the &amp;ldquo;clean code doesn&#39;t need comments&amp;rdquo; camp, but SDKs tend to be a limited view into a larger abstraction, so good documentation is a necessity.
 Javadoc has been around since the introduction of the Java language, so I won&#39;t include a primer here. If you want to learn more, Oracle has you covered.</description>
     </item>

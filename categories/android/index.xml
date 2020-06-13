@@ -2,69 +2,81 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Android on Andy Dyer</title>
-    <link>http://andydyer.org/categories/android/</link>
+    <link>https://andydyer.org/categories/android/</link>
     <description>Recent content in Android on Andy Dyer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Mar 2020 10:30:55 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 23 Apr 2020 07:46:28 +0200</lastBuildDate>
     
-	<atom:link href="http://andydyer.org/categories/android/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://andydyer.org/categories/android/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Automating development tasks with Kotlin Script</title>
+      <link>https://andydyer.org/blog/2020/04/23/automating-development-tasks-with-kotlin-script/</link>
+      <pubDate>Thu, 23 Apr 2020 07:46:28 +0200</pubDate>
+      
+      <guid>https://andydyer.org/blog/2020/04/23/automating-development-tasks-with-kotlin-script/</guid>
+      <description>Kotlin Script is the perfect glue for piecing together a variety of shell commands to automate your development tasks. Syntax we know and love. More intuitive than Bash scripts. Some autocomplete
+You probably need kscript kscript Dependencies (but these should be minimized) Import support for better script organization &amp;amp; reuse
+How we used it to automate our regression testing process
+ Display a list of app versions from AppCenter using their CLI, prompt the user to choose one.</description>
+    </item>
+    
+    <item>
       <title>Jetpack Benchmark on Firebase Test Lab</title>
-      <link>http://andydyer.org/blog/2020/03/06/jetpack-benchmark-on-firebase-test-lab/</link>
+      <link>https://andydyer.org/blog/2020/03/06/jetpack-benchmark-on-firebase-test-lab/</link>
       <pubDate>Fri, 06 Mar 2020 10:30:55 +0100</pubDate>
       
-      <guid>http://andydyer.org/blog/2020/03/06/jetpack-benchmark-on-firebase-test-lab/</guid>
+      <guid>https://andydyer.org/blog/2020/03/06/jetpack-benchmark-on-firebase-test-lab/</guid>
       <description>As previously outlined in my talk at Mobius Conference in Saint Petersburg last year, our team at Zalando is building a server-driven UI platform we call AppCraft. AppCraft allows us to add or update screens in our app with only server changes instead of the normal app release constrained way of doing things.
 On the client side, we are building every screen the same way: fetch layout &amp;amp; data from the server, parse it, and render it.</description>
     </item>
     
     <item>
       <title>AppCraft: Faster Than a Speeding Release Train</title>
-      <link>http://andydyer.org/blog/2019/12/22/appcraft-faster-than-a-speeding-release-train/</link>
+      <link>https://andydyer.org/blog/2019/12/22/appcraft-faster-than-a-speeding-release-train/</link>
       <pubDate>Sun, 22 Dec 2019 16:45:32 +0000</pubDate>
       
-      <guid>http://andydyer.org/blog/2019/12/22/appcraft-faster-than-a-speeding-release-train/</guid>
+      <guid>https://andydyer.org/blog/2019/12/22/appcraft-faster-than-a-speeding-release-train/</guid>
       <description>It was a pleasure speaking at Mobius Conference in Saint Petersburg this past May. I never got around to finishing the transcript of the talk I intended to write, but you can find the slides on Speaker Deck and the video on YouTube:
    </description>
     </item>
     
     <item>
       <title>Introducing Biografy</title>
-      <link>http://andydyer.org/blog/2017/12/24/introducing-biografy/</link>
+      <link>https://andydyer.org/blog/2017/12/24/introducing-biografy/</link>
       <pubDate>Sun, 24 Dec 2017 20:53:35 +0000</pubDate>
       
-      <guid>http://andydyer.org/blog/2017/12/24/introducing-biografy/</guid>
+      <guid>https://andydyer.org/blog/2017/12/24/introducing-biografy/</guid>
       <description>What is Biografy? Biografy is a lifelogging app that automatically builds a timeline of each day. The Events view logs events from various apps including music, podcasts, videos, calls and chats. Each event includes rich detail such as the time, activity (stationary, walking, biking, etc.), and location/place. The Motion view lists car/transit trips, bike rides, runs, and walks. With the Map view, you can see where you were when each event occurred and gain insights like where you spend your time based on the clusters of pins.</description>
     </item>
     
     <item>
       <title>React Native: Is It Worth It?</title>
-      <link>http://andydyer.org/blog/2017/11/27/react-native-is-it-worth-it/</link>
+      <link>https://andydyer.org/blog/2017/11/27/react-native-is-it-worth-it/</link>
       <pubDate>Mon, 27 Nov 2017 21:35:15 +0000</pubDate>
       
-      <guid>http://andydyer.org/blog/2017/11/27/react-native-is-it-worth-it/</guid>
+      <guid>https://andydyer.org/blog/2017/11/27/react-native-is-it-worth-it/</guid>
       <description>Intro When new technologies start gaining momentum in the Android community, the pragmatic (or lazy) among us eventually have to ask ourselves, “Is it worth it?” After the initial arrival and departure of the hype train, some of these become trusted tools we use in almost every app. Think RxJava and Dagger.
 React Native may be on its way to earning a place in the same club. Once we get past the fact that JavaScript on Android and HTML in JavaScript seem pretty damn weird at first, there’s a lot to like.</description>
     </item>
     
     <item>
       <title>Multiple Developers, One App: How to Not Break Everything</title>
-      <link>http://andydyer.org/blog/2016/10/22/multiple-developers-one-app-how-to-not-break-everything/</link>
+      <link>https://andydyer.org/blog/2016/10/22/multiple-developers-one-app-how-to-not-break-everything/</link>
       <pubDate>Sat, 22 Oct 2016 13:00:39 -0500</pubDate>
       
-      <guid>http://andydyer.org/blog/2016/10/22/multiple-developers-one-app-how-to-not-break-everything/</guid>
+      <guid>https://andydyer.org/blog/2016/10/22/multiple-developers-one-app-how-to-not-break-everything/</guid>
       <description>This was my third time attending the Big Android BBQ in Hurst, TX and my third time to present at it. Perhaps my favorite thing about the conference (aside from the obvious BBQ) is reconnecting with old friends and making new ones. This year I&#39;ve had the pleasure of meeting people from all over the world and learning that we know a lot of the same people. Small world, indeed.</description>
     </item>
     
     <item>
       <title>Things That Suck About Android Development</title>
-      <link>http://andydyer.org/blog/2016/03/18/things-that-suck-about-android-development/</link>
+      <link>https://andydyer.org/blog/2016/03/18/things-that-suck-about-android-development/</link>
       <pubDate>Fri, 18 Mar 2016 13:17:48 +0100</pubDate>
       
-      <guid>http://andydyer.org/blog/2016/03/18/things-that-suck-about-android-development/</guid>
+      <guid>https://andydyer.org/blog/2016/03/18/things-that-suck-about-android-development/</guid>
       <description>I presented &amp;ldquo;Things That Suck About Android Development&amp;rdquo; at this year&#39;s mdevcon conference in Amsterdam. It&#39;s a great conference in an amazing city. I highly recommend it to anyone developing mobile apps.
 The title is admittedly a bit sensational, but my goal was to highlight many of the painful parts about developing for Android and how to avoid/fix them.
 Here are the slides!
@@ -73,145 +85,145 @@ Here are the slides!
     
     <item>
       <title>Using a Third Party FAB with CoordinatorLayout</title>
-      <link>http://andydyer.org/blog/2015/06/28/using-a-third-party-fab-with-coordinatorlayout/</link>
+      <link>https://andydyer.org/blog/2015/06/28/using-a-third-party-fab-with-coordinatorlayout/</link>
       <pubDate>Sun, 28 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://andydyer.org/blog/2015/06/28/using-a-third-party-fab-with-coordinatorlayout/</guid>
+      <guid>https://andydyer.org/blog/2015/06/28/using-a-third-party-fab-with-coordinatorlayout/</guid>
       <description>Before the Design Support Library was announced at Google I/O last month, I had numerous third party libraries in my projects for various elements of Material Design. I&#39;ve enjoyed replacing the nav drawer, tabs, and parallax scrolling libraries with their support library counterparts. However, on one of my projects, we needed an expanding floating action button (FAB) similar to the one in Inbox, which the support library does not currently provide.</description>
     </item>
     
     <item>
       <title>The Time I Interviewed at Google</title>
-      <link>http://andydyer.org/blog/2015/06/09/the-time-i-interviewed-at-google/</link>
+      <link>https://andydyer.org/blog/2015/06/09/the-time-i-interviewed-at-google/</link>
       <pubDate>Tue, 09 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://andydyer.org/blog/2015/06/09/the-time-i-interviewed-at-google/</guid>
+      <guid>https://andydyer.org/blog/2015/06/09/the-time-i-interviewed-at-google/</guid>
       <description>I&#39;ve had a pretty big secret for the past month or so; something that only my friends and family know about. We&#39;ve all been there, sneaking around interviewing for a new job like we&#39;re having an affair. Only this time, it was different. As an Android developer, this was like trying out for the majors. No&amp;hellip;seriously, y&#39;all&amp;hellip;Google invited me to interview.
 My adventure started early last month as I was triaging my inbox.</description>
     </item>
     
     <item>
       <title>Loading a List of Objects from Firebase</title>
-      <link>http://andydyer.org/blog/2015/04/06/loading-a-list-of-objects-from-firebase/</link>
+      <link>https://andydyer.org/blog/2015/04/06/loading-a-list-of-objects-from-firebase/</link>
       <pubDate>Mon, 06 Apr 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://andydyer.org/blog/2015/04/06/loading-a-list-of-objects-from-firebase/</guid>
+      <guid>https://andydyer.org/blog/2015/04/06/loading-a-list-of-objects-from-firebase/</guid>
       <description>I&#39;ve been working with Firebase lately in preparation for adding data synchronization to my Music Library app. Their docs did a great job of getting me set up. Using the sample app as a guide, I even got Google+ OAuth working without much trouble. From there, it didn&#39;t take long to load data into a Firebase instance partitioned by Google account. All that was left was to query the data out of Firebase and I&#39;d be able to see the sync magic in action.</description>
     </item>
     
     <item>
       <title>Why I&#39;m Unironically Carrying This Small, Older Android Phone</title>
-      <link>http://andydyer.org/blog/2015/02/19/why-im-unironically-carrying-this-small-older-android-phone/</link>
+      <link>https://andydyer.org/blog/2015/02/19/why-im-unironically-carrying-this-small-older-android-phone/</link>
       <pubDate>Thu, 19 Feb 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://andydyer.org/blog/2015/02/19/why-im-unironically-carrying-this-small-older-android-phone/</guid>
+      <guid>https://andydyer.org/blog/2015/02/19/why-im-unironically-carrying-this-small-older-android-phone/</guid>
       <description>I thoroughly enjoyed my last night in Berlin a little over a week ago; so much that I didn&#39;t notice my phone was missing until the end of the night. Shake your head and say it couldn&#39;t happen to you. I thought the same thing until it did. Normally, I keep my phone in one of my front pockets, but I was wearing a coat that covered the pocket, making it a bit more difficult to grab my phone quickly to check Google Maps.</description>
     </item>
     
     <item>
       <title>MCE Conference 2015 - Automated Testing for Modern Android Applications</title>
-      <link>http://andydyer.org/blog/2015/02/08/mce-conference-2015-automated-testing-for-modern-android-applications/</link>
+      <link>https://andydyer.org/blog/2015/02/08/mce-conference-2015-automated-testing-for-modern-android-applications/</link>
       <pubDate>Sun, 08 Feb 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://andydyer.org/blog/2015/02/08/mce-conference-2015-automated-testing-for-modern-android-applications/</guid>
+      <guid>https://andydyer.org/blog/2015/02/08/mce-conference-2015-automated-testing-for-modern-android-applications/</guid>
       <description>It was an honor to speak at and attend MCE Conference in Warsaw last week. I participated in a workshop where I learned about prototyping with Android and Arduinos. I attended talks about Groovy, Kotlin, Proguard, design, scaling apps for emerging markets, and some handy new libraries.
 That alone easily makes MCE one of the best conferences I&#39;ve been to. On top of all that, the networking with fellow speakers and attendees was a personal highlight.</description>
     </item>
     
     <item>
       <title>Running Shell Commands with Gradle and a Better Way to Delombok</title>
-      <link>http://andydyer.org/blog/2015/01/22/running-shell-commands-with-gradle-and-a-better-way-to-delombok/</link>
+      <link>https://andydyer.org/blog/2015/01/22/running-shell-commands-with-gradle-and-a-better-way-to-delombok/</link>
       <pubDate>Thu, 22 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://andydyer.org/blog/2015/01/22/running-shell-commands-with-gradle-and-a-better-way-to-delombok/</guid>
+      <guid>https://andydyer.org/blog/2015/01/22/running-shell-commands-with-gradle-and-a-better-way-to-delombok/</guid>
       <description>A few months ago, I posted about how to use Gradle tasks to &amp;ldquo;delombok&amp;rdquo; code using Lombok annotations before generating Javadocs. My solution for running the delombok task used Ant and was based on what I found after the requisite Google &amp;amp; StackOverflow searching. This worked just fine until Android Studio 1.0 and the associated Gradle build tools were released at the end of the year.
 The crux of the problem appeared to be a change in the way dependencies are merged during compilation.</description>
     </item>
     
     <item>
       <title>Music Library 3.0 - Material Design Update</title>
-      <link>http://andydyer.org/blog/2014/11/02/music-library-3.0-material-design-update/</link>
+      <link>https://andydyer.org/blog/2014/11/02/music-library-3.0-material-design-update/</link>
       <pubDate>Sun, 02 Nov 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://andydyer.org/blog/2014/11/02/music-library-3.0-material-design-update/</guid>
+      <guid>https://andydyer.org/blog/2014/11/02/music-library-3.0-material-design-update/</guid>
       <description>I started developing Music Library about four years ago when I wanted an app for organizing my record collection. Armed with my Nexus One, Eclipse, and a copy of Apress&amp;rsquo; Pro Android, I spent my nights and weekends learning the inner workings of my now-favorite mobile OS.
 Over the years, Music Library has been a playground of sorts for exploring various open source libraries, patterns, and best practices. While there is still a fair amount of code I would write differently today (I&#39;m looking at you, ContentProvider), the app has been and continues to be an enjoyable side project.</description>
     </item>
     
     <item>
       <title>BABBQ5 - Automated Testing for Modern Android Applications</title>
-      <link>http://andydyer.org/blog/2014/10/17/babbq5-automated-testing-for-modern-android-applications/</link>
+      <link>https://andydyer.org/blog/2014/10/17/babbq5-automated-testing-for-modern-android-applications/</link>
       <pubDate>Fri, 17 Oct 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://andydyer.org/blog/2014/10/17/babbq5-automated-testing-for-modern-android-applications/</guid>
+      <guid>https://andydyer.org/blog/2014/10/17/babbq5-automated-testing-for-modern-android-applications/</guid>
       <description>This is my third year to attend and present at the Big Android BBQ. My talk this year showed how to prepare an Android app for automated testing using mocking, dependency injection, and Google&#39;s super fast Espresso test runner. You can find the presentation on Speaker Deck and the sample code on GitHub. 
  </description>
     </item>
     
     <item>
       <title>Hosting Android Dependencies on GitHub</title>
-      <link>http://andydyer.org/blog/2014/10/05/hosting-android-dependencies-on-github/</link>
+      <link>https://andydyer.org/blog/2014/10/05/hosting-android-dependencies-on-github/</link>
       <pubDate>Sun, 05 Oct 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://andydyer.org/blog/2014/10/05/hosting-android-dependencies-on-github/</guid>
+      <guid>https://andydyer.org/blog/2014/10/05/hosting-android-dependencies-on-github/</guid>
       <description>As I mentioned in my last post, I&#39;m developing an SDK at work. The libraries I use most frequently in my apps are all included as Maven dependencies. Adding a line to my build.gradle file is much preferred to downloading a JAR file. To make the SDK as easy as possible for developers to include in their projects, I wanted to deliver it the same way.
 Maven Central is the de facto repository for open source library hosting.</description>
     </item>
     
     <item>
       <title>Delombok and Javadoc with Gradle</title>
-      <link>http://andydyer.org/blog/2014/09/29/delombok-and-javadoc-with-gradle/</link>
+      <link>https://andydyer.org/blog/2014/09/29/delombok-and-javadoc-with-gradle/</link>
       <pubDate>Mon, 29 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://andydyer.org/blog/2014/09/29/delombok-and-javadoc-with-gradle/</guid>
+      <guid>https://andydyer.org/blog/2014/09/29/delombok-and-javadoc-with-gradle/</guid>
       <description>I recently had my first experience working with Javadoc to generate documentation for an SDK I&#39;ve been developing at work. In general, I&#39;m in the &amp;ldquo;clean code doesn&#39;t need comments&amp;rdquo; camp, but SDKs tend to be a limited view into a larger abstraction, so good documentation is a necessity.
 Javadoc has been around since the introduction of the Java language, so I won&#39;t include a primer here. If you want to learn more, Oracle has you covered.</description>
     </item>
     
     <item>
       <title>Android&#39;s Material Design and The Bauhaus</title>
-      <link>http://andydyer.org/blog/2014/07/13/androids-material-design-and-the-bauhaus/</link>
+      <link>https://andydyer.org/blog/2014/07/13/androids-material-design-and-the-bauhaus/</link>
       <pubDate>Sun, 13 Jul 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://andydyer.org/blog/2014/07/13/androids-material-design-and-the-bauhaus/</guid>
+      <guid>https://andydyer.org/blog/2014/07/13/androids-material-design-and-the-bauhaus/</guid>
       <description>Since Android Gingerbread (v2.3), loyalists know that each version has an Easter egg that can be accessed by repeatedly tapping the version number on the Settings &amp;gt; About screen. The Android &amp;ldquo;L&amp;rdquo; Preview is no exception.
 While test driving the new version, I naturally had to see what Google had hidden for me in their latest release. Previous versions have had everything from gingerbread zombies to Nyandroids and a pile of jelly beans.</description>
     </item>
     
     <item>
       <title>Fun with Android Wear</title>
-      <link>http://andydyer.org/blog/2014/07/12/fun-with-android-wear/</link>
+      <link>https://andydyer.org/blog/2014/07/12/fun-with-android-wear/</link>
       <pubDate>Sat, 12 Jul 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://andydyer.org/blog/2014/07/12/fun-with-android-wear/</guid>
+      <guid>https://andydyer.org/blog/2014/07/12/fun-with-android-wear/</guid>
       <description>I got my LG G Android Wear smart watch earlier this week and dove right into developing for it.
 My first project was Deutsch Uhr, a text-based German language watch face inspired by my favorite Pebble watch face. I had fun adding animations for the hour/minute/day changes and learning what makes a Wear app tick (pun intended, I always do). A big thanks to my friend Daniel Ward for help getting started.</description>
     </item>
     
     <item>
       <title>Google I/O 2014: An Android Developer&#39;s Perspective</title>
-      <link>http://andydyer.org/blog/2014/06/28/google-i/o-2014-an-android-developers-perspective/</link>
+      <link>https://andydyer.org/blog/2014/06/28/google-i/o-2014-an-android-developers-perspective/</link>
       <pubDate>Sat, 28 Jun 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://andydyer.org/blog/2014/06/28/google-i/o-2014-an-android-developers-perspective/</guid>
+      <guid>https://andydyer.org/blog/2014/06/28/google-i/o-2014-an-android-developers-perspective/</guid>
       <description>This year’s Google I/O developer conference once again gave developers plenty to be excited about. As expected, we heard about the next release of the Android operating system, Android Wear smart watches, and updated development tools. Rumored products &amp;amp; services such as Android TV, Android Auto, and Google Fit were also announced. Perhaps the most exciting and far-reaching announcement was the new Material Design language, which replaces the now dated looking Holo with a consistent look for all platforms.</description>
     </item>
     
     <item>
       <title>Droidcon Berlin 2014: Froyo to KitKat</title>
-      <link>http://andydyer.org/blog/2014/05/09/droidcon-berlin-2014-froyo-to-kitkat/</link>
+      <link>https://andydyer.org/blog/2014/05/09/droidcon-berlin-2014-froyo-to-kitkat/</link>
       <pubDate>Fri, 09 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://andydyer.org/blog/2014/05/09/droidcon-berlin-2014-froyo-to-kitkat/</guid>
+      <guid>https://andydyer.org/blog/2014/05/09/droidcon-berlin-2014-froyo-to-kitkat/</guid>
       <description>I&#39;m thrilled to be speaking at Droidcon Berlin this year. I fell in love with the city on my first visit and the conference was a perfect reason for another visit. Attempts to try out my very basic German skills have shown me that I have a long way to go. However, I am proud to say that I have managed to make a few purchases without panicking and falling back to English.</description>
     </item>
     
     <item>
       <title>Developing for Android Tutorial</title>
-      <link>http://andydyer.org/blog/2014/04/04/developing-for-android-tutorial/</link>
+      <link>https://andydyer.org/blog/2014/04/04/developing-for-android-tutorial/</link>
       <pubDate>Fri, 04 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://andydyer.org/blog/2014/04/04/developing-for-android-tutorial/</guid>
+      <guid>https://andydyer.org/blog/2014/04/04/developing-for-android-tutorial/</guid>
       <description>I gave a two hour tutorial on developing for Android at work today for our weekly tech talk. Similar in style to my coworker Aaron Ortbals&amp;rsquo; tutorial on Ember.js, I showed how to build a client for GitHub&#39;s Events API.
 Topics included:
  Project setup Gradle dependencies API requests &amp;amp; JSON parsing Activities &amp;amp; fragments Lists, adapters, and custom item layouts  You can find the source code and the slides for the tutorial on GitHub.</description>
@@ -219,57 +231,57 @@ Topics included:
     
     <item>
       <title>Presenting: Wrist Presenter for Android and the Pebble Smartwatch</title>
-      <link>http://andydyer.org/blog/2014/03/07/presenting-wrist-presenter-for-android-and-the-pebble-smartwatch/</link>
+      <link>https://andydyer.org/blog/2014/03/07/presenting-wrist-presenter-for-android-and-the-pebble-smartwatch/</link>
       <pubDate>Fri, 07 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://andydyer.org/blog/2014/03/07/presenting-wrist-presenter-for-android-and-the-pebble-smartwatch/</guid>
+      <guid>https://andydyer.org/blog/2014/03/07/presenting-wrist-presenter-for-android-and-the-pebble-smartwatch/</guid>
       <description>Shortly after getting a Pebble Smartwatch this past Christmas, my coworker and all-around-cool-dude Matthew Morey asked me if I&#39;d be interested in developing the Android version of his Wrist Presenter iOS app. Luckily, he already had a rock solid Pebble app developed, so I didn&#39;t have to flex my meager C programming skills.
 Wrist Presenter turns your Pebble Smartwatch into a remote for presentations running on your Android or iOS device.</description>
     </item>
     
     <item>
       <title>Introducing Kollektor</title>
-      <link>http://andydyer.org/blog/2013/12/28/introducing-kollektor/</link>
+      <link>https://andydyer.org/blog/2013/12/28/introducing-kollektor/</link>
       <pubDate>Sat, 28 Dec 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://andydyer.org/blog/2013/12/28/introducing-kollektor/</guid>
+      <guid>https://andydyer.org/blog/2013/12/28/introducing-kollektor/</guid>
       <description>Why a new app? When I first decided to get into Android development, I created the Music Library app to catalog my vinyl collection. It served me well as I learned the ins and outs of Android programming including content providers, interacting with other applications via intents, working with the file system to save/load images, making API requests, etc. In order to test the workings of the Android app market, I published the ad supported Music Library Free and the paid Music Library versions of the app.</description>
     </item>
     
     <item>
       <title>Signing Volley Requests with Scribe</title>
-      <link>http://andydyer.org/blog/2013/12/15/signing-volley-requests-with-scribe/</link>
+      <link>https://andydyer.org/blog/2013/12/15/signing-volley-requests-with-scribe/</link>
       <pubDate>Sun, 15 Dec 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://andydyer.org/blog/2013/12/15/signing-volley-requests-with-scribe/</guid>
+      <guid>https://andydyer.org/blog/2013/12/15/signing-volley-requests-with-scribe/</guid>
       <description>When I initially needed to integrate OAuth request signing with Volley in my Android app, I used the Signpost library. It was fairly straightforward to build a URL, pass it to the Signpost OAuthConsumer, and retrieve a new string with the appropriate OAuth parameters added. Unfortunately, as you can see from the commit history, there has been very little activity over the past year.
 Increasingly, I see recommendations for Scribe. The project is very active and it makes implementing OAuth request signing as easy as it&#39;s likely to get.</description>
     </item>
     
     <item>
       <title>TechStreet Houston: Intro to Android Programming</title>
-      <link>http://andydyer.org/blog/2013/11/20/techstreet-houston-intro-to-android-programming/</link>
+      <link>https://andydyer.org/blog/2013/11/20/techstreet-houston-intro-to-android-programming/</link>
       <pubDate>Wed, 20 Nov 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://andydyer.org/blog/2013/11/20/techstreet-houston-intro-to-android-programming/</guid>
+      <guid>https://andydyer.org/blog/2013/11/20/techstreet-houston-intro-to-android-programming/</guid>
       <description>I&#39;m giving another Intro to Android Programming talk at TechStreet Houston today. The slides are very similar to my previous talk at Houston TechFest, but here is the link for today&#39;s presentation.</description>
     </item>
     
     <item>
       <title>Things I Learned at Big Android BBQ 2013</title>
-      <link>http://andydyer.org/blog/2013/10/13/things-i-learned-at-big-android-bbq-2013/</link>
+      <link>https://andydyer.org/blog/2013/10/13/things-i-learned-at-big-android-bbq-2013/</link>
       <pubDate>Sun, 13 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://andydyer.org/blog/2013/10/13/things-i-learned-at-big-android-bbq-2013/</guid>
+      <guid>https://andydyer.org/blog/2013/10/13/things-i-learned-at-big-android-bbq-2013/</guid>
       <description>T-Mobile reception is still terrible at the conference center. Alcohol purchases spike in the City of Hurst as a result of the conference. The guys from Willow Tree Apps have released some awesome Android open source libraries (BetterPickers, OAK, and RPatch) It&#39;s worth the short drive to Roots Coffee each morning. High Roller makes adult size big wheels. They are a ton of fun to ride. Oppo makes some pretty sweet phones.</description>
     </item>
     
     <item>
       <title>Big Android BBQ 2013 - Android Open Source Libraries You Need in Your Life</title>
-      <link>http://andydyer.org/blog/2013/10/11/big-android-bbq-2013-android-open-source-libraries-you-need-in-your-life/</link>
+      <link>https://andydyer.org/blog/2013/10/11/big-android-bbq-2013-android-open-source-libraries-you-need-in-your-life/</link>
       <pubDate>Fri, 11 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://andydyer.org/blog/2013/10/11/big-android-bbq-2013-android-open-source-libraries-you-need-in-your-life/</guid>
+      <guid>https://andydyer.org/blog/2013/10/11/big-android-bbq-2013-android-open-source-libraries-you-need-in-your-life/</guid>
       <description>This is my second year to speak at the Big Android BBQ in Hurst, TX. My talk covered a slew of handy open source libraries to accelerate the development of modern Android applications.
 The slides are available on Google Drive.
 I&#39;m having a blast at the conference. The sessions so far have been great. I hope to see all of you here again next year!</description>
@@ -277,30 +289,30 @@ I&#39;m having a blast at the conference. The sessions so far have been great. I
     
     <item>
       <title>Houston TechFest: Intro to Android Programming</title>
-      <link>http://andydyer.org/blog/2013/09/28/houston-techfest-intro-to-android-programming/</link>
+      <link>https://andydyer.org/blog/2013/09/28/houston-techfest-intro-to-android-programming/</link>
       <pubDate>Sat, 28 Sep 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://andydyer.org/blog/2013/09/28/houston-techfest-intro-to-android-programming/</guid>
+      <guid>https://andydyer.org/blog/2013/09/28/houston-techfest-intro-to-android-programming/</guid>
       <description>I gave an Intro to Android Programming presentation today at Houston TechFest. The slides are available on Google Drive.
 Thanks to everyone who attended. Keep Android trill!</description>
     </item>
     
     <item>
       <title>Migrating from Ant to Gradle</title>
-      <link>http://andydyer.org/blog/2013/08/06/migrating-from-ant-to-gradle/</link>
+      <link>https://andydyer.org/blog/2013/08/06/migrating-from-ant-to-gradle/</link>
       <pubDate>Tue, 06 Aug 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://andydyer.org/blog/2013/08/06/migrating-from-ant-to-gradle/</guid>
+      <guid>https://andydyer.org/blog/2013/08/06/migrating-from-ant-to-gradle/</guid>
       <description>I&#39;ll be giving a talk on migrating a custom Eclipse/Ant build to Android Studio/Gradle at tonight&#39;s Houston Android Developers meetup. The slides are available on Google Drive.
 I hope to see you there!</description>
     </item>
     
     <item>
       <title>Setting item selected state in Android GridView</title>
-      <link>http://andydyer.org/blog/2012/09/25/setting-item-selected-state-in-android-gridview/</link>
+      <link>https://andydyer.org/blog/2012/09/25/setting-item-selected-state-in-android-gridview/</link>
       <pubDate>Tue, 25 Sep 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://andydyer.org/blog/2012/09/25/setting-item-selected-state-in-android-gridview/</guid>
+      <guid>https://andydyer.org/blog/2012/09/25/setting-item-selected-state-in-android-gridview/</guid>
       <description>When working with the GridView in an Android app recently, I ran into a very strange behavior around setting the selected state for a view created in my ArrayAdapter&#39;s getView() method. I&#39;m using selectors to handle the drawable states and everything works properly when tapping a list item to select/tapping again to unselect. When debugging the ArrayAdapter&#39;s getView() method, I could see that the selected state was being set to the correct value when calling view.</description>
     </item>
     

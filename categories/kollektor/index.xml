@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kollektor on Andy Dyer</title>
-    <link>http://andydyer.org/categories/kollektor/</link>
+    <link>https://andydyer.org/categories/kollektor/</link>
     <description>Recent content in Kollektor on Andy Dyer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 28 Dec 2013 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://andydyer.org/categories/kollektor/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://andydyer.org/categories/kollektor/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Introducing Kollektor</title>
-      <link>http://andydyer.org/blog/2013/12/28/introducing-kollektor/</link>
+      <link>https://andydyer.org/blog/2013/12/28/introducing-kollektor/</link>
       <pubDate>Sat, 28 Dec 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://andydyer.org/blog/2013/12/28/introducing-kollektor/</guid>
+      <guid>https://andydyer.org/blog/2013/12/28/introducing-kollektor/</guid>
       <description>Why a new app? When I first decided to get into Android development, I created the Music Library app to catalog my vinyl collection. It served me well as I learned the ins and outs of Android programming including content providers, interacting with other applications via intents, working with the file system to save/load images, making API requests, etc. In order to test the workings of the Android app market, I published the ad supported Music Library Free and the paid Music Library versions of the app.</description>
     </item>
     
