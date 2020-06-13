@@ -1,504 +1,132 @@
-<!DOCTYPE html>
-<html lang="en-us">
-    
-    
+<!doctype html><html lang=en-us><head><link href=https://gmpg.org/xfn/11 rel=profile><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta http-equiv=cache-control content="public"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1"><meta name=generator content="Hugo 0.72.0"><title>React Native: Is It Worth It? • Andy Dyer</title><meta name=twitter:card content="summary"><meta name=twitter:title content="React Native: Is It Worth It?"><meta name=twitter:description content="Intro When new technologies start gaining momentum in the Android community, the pragmatic (or lazy) among us eventually have to ask ourselves, “Is it worth it?” After the initial arrival and departure of the hype train, some of these become trusted tools we use in almost every app. Think RxJava and Dagger.
+React Native may be on its way to earning a place in the same club. Once we get past the fact that JavaScript on Android and HTML in JavaScript seem pretty damn weird at first, there’s a lot to like."><meta property="og:title" content="React Native: Is It Worth It?"><meta property="og:description" content="Intro When new technologies start gaining momentum in the Android community, the pragmatic (or lazy) among us eventually have to ask ourselves, “Is it worth it?” After the initial arrival and departure of the hype train, some of these become trusted tools we use in almost every app. Think RxJava and Dagger.
+React Native may be on its way to earning a place in the same club. Once we get past the fact that JavaScript on Android and HTML in JavaScript seem pretty damn weird at first, there’s a lot to like."><meta property="og:type" content="article"><meta property="og:url" content="https://andydyer.org/blog/2017/11/27/react-native-is-it-worth-it/"><meta property="article:published_time" content="2017-11-27T21:35:15+00:00"><meta property="article:modified_time" content="2017-11-27T21:35:15+00:00"><link rel=stylesheet href=https://andydyer.org/scss/hyde-hyde.8d4a958e8a5a3e3358bc9061aef41d5fb922f553dd6da59906472e8aaa5f4a48.css integrity="sha256-jUqVjopaPjNYvJBhrvQdX7ki9VPdbaWZBkcuiqpfSkg="><link rel=stylesheet href=https://andydyer.org/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58+TzH3icCkSHGoJ+ed7w=" media=print><!--[if lt IE 9]><script src=https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js></script><script src=https://oss.maxcdn.com/respond/1.4.2/respond.min.js></script><![endif]--><link rel=apple-touch-icon-precomposed sizes=144x144 href=https://andydyer.org/apple-touch-icon-144-precomposed.png><link rel="shortcut icon" href=https://andydyer.org/favicon.png></head><body class=theme-base-0g><div class=sidebar><div class=container><div class=sidebar-about><div class=author-image><a href=https://andydyer.org/><img src="https://www.gravatar.com/avatar/e0ac1256093c733a5d5a26085b90966f?s=240&d=mp" class="img--circle img--headshot element--center" alt=gravatar></a></div><span class=site__title><a href=https://andydyer.org/>Andy Dyer</a></span><p class=site__description>Senior Android Engineer <a href=https://twitter.com/zalandotech>@ZalandoTech</a>, editor <a href=https://twitter.com/proandroiddev>@ProAndroidDev</a>, occasional conference speaker.</p></div><div class=collapsible-menu><input type=checkbox id=menuToggle>
+<label for=menuToggle>Andy Dyer</label><div class=menu-content><div><ul class=sidebar-nav><li><a href=https://andydyer.org/categories/android><span>Android</span></a></li><li><a href=https://andydyer.org/categories/speaking><span>Speaking</span></a></li><li><a href=https://andydyer.org/blog/2009/04/19/bands-ive-seen-live><span>Bands I've Seen Live</span></a></li></ul></div><section class=social><a href=https://twitter.com/dammitandy rel=me><i class="fab fa-twitter fa-lg" aria-hidden=true></i></a><a href=https://github.com/abdyer rel=me><i class="fab fa-github fa-lg" aria-hidden=true></i></a><a href=https://linkedin.com/in/abdyer rel=me><i class="fab fa-linkedin fa-lg" aria-hidden=true></i></a></section></div></div></div></div><div class="content container"><article><header><h1>React Native: Is It Worth It?</h1><div class=post__meta><i class="fas fa-calendar-alt"></i>Nov 27, 2017
+in
+<a class="badge badge-category" href=https://andydyer.org/categories/android>ANDROID</a>
+•
+<a class="badge badge-category" href=https://andydyer.org/categories/conferences>CONFERENCES</a>
+•
+<a class="badge badge-category" href=https://andydyer.org/categories/speaking>SPEAKING</a><br><i class="fas fa-clock"></i>17 min read</div></header><div class=post><h3 id=intro>Intro</h3><p>When new technologies start gaining momentum in the Android community, the pragmatic (or lazy) among us eventually have to ask ourselves, “Is it worth it?” After the initial arrival and departure of the hype train, some of these become trusted tools we use in almost every app. Think <a href=https://github.com/ReactiveX/RxJava>RxJava</a> and <a href=https://google.github.io/dagger/>Dagger</a>.</p><p><a href=https://facebook.github.io/react-native/>React Native</a> may be on its way to earning a place in the same club. Once we get past the fact that JavaScript on Android and HTML in JavaScript seem pretty damn weird at first, there’s a lot to like. Seeing your changes on a device almost instantly is a love-at-first-sight kind of thing. And rethinking your app architecture as a series of actions, state changes, and UI render phases can eliminate a surprising number of silly bugs.</p><p>A dive into every new technology starts with the flashy “type these commands and run your ‘Hello World’ app” tutorial. This is not that kind of post. Instead, I’ll recap my experience digging into React Native for real world use. From integrating RN code into an existing Java/Kotlin app to dealing with the kind of problems they never mention in the README, I’ll cover what you need to know to decide if React Native is really worth your time.<br><br></p><h3 id=why-react-native>Why React Native?</h3><p>As I see it, there are four reasons why you might want to consider using React Native:</p><ol><li><strong>Fast Iteration</strong> - Hot reloading enables fast iteration as changes show up on an emulator instantly.</li><li><strong>Cross Platform</strong> - Much of the code can be shared between Android and iOS.</li><li><strong>Dynamic Code Updates</strong> - React Native is unique it its ability to push updates to devices without requiring an app release.</li><li><strong>Learning Something New</strong> - Web developers want to build mobile apps and mobile developers want to learn about web development. And some (like myself), want to ease back into web development after focusing on mobile for the last several years.<br><br></li></ol><h3 id=react-architecture>React Architecture</h3><p>These days, most large Android apps either adhere to the <a href=https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93presenter>MVP</a> or <a href=https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel>MVVM</a> architecture. Models, state changes, and UI logic are kept separated. But how and when the UI is updated is largely up to us to decide on a case by case basis. With React, these decisions have been made for us. Our UI is driven by state changes and that’s pretty much it. State is a first class citizen and the UI is rendered anytime it changes. By breaking the UI into components with a unidirectional data flow, code is organized into small, reusable building blocks following a well defined pattern:</p><p><img src=https://andydyer.org/images/react_architecture.png alt="React Architecture" style=width:547px;margin-left:auto;margin-right:auto;display:block></p><h3 id=sample-app>Sample App</h3><p>Let’s look at a small sample app to help visualize how things fit together:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-react data-lang=react><span style=color:#66d9ef>import</span> <span style=color:#a6e22e>React</span>, { <span style=color:#a6e22e>Component</span> } <span style=color:#a6e22e>from</span> <span style=color:#e6db74>&#39;react&#39;</span>;
+<span style=color:#66d9ef>import</span> {
+  <span style=color:#a6e22e>AppRegistry</span>,
+  <span style=color:#a6e22e>StyleSheet</span>,
+  <span style=color:#a6e22e>Text</span>,
+  <span style=color:#a6e22e>TextInput</span>,
+  <span style=color:#a6e22e>View</span>
+} <span style=color:#a6e22e>from</span> <span style=color:#e6db74>&#39;react-native&#39;</span>;
 
-
-    <head>
-    <link href="https://gmpg.org/xfn/11" rel="profile">
-    <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta http-equiv="Cache-Control" content="public" />
-<!-- Enable responsiveness on mobile devices -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<meta name="generator" content="Hugo 0.61.0" />
-
-    
-    
-    
-
-<title>React Native: Is It Worth It? • Andy Dyer</title>
-
-
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="React Native: Is It Worth It?"/>
-<meta name="twitter:description" content="Intro When new technologies start gaining momentum in the Android community, the pragmatic (or lazy) among us eventually have to ask ourselves, “Is it worth it?” After the initial arrival and departure of the hype train, some of these become trusted tools we use in almost every app. Think RxJava and Dagger.
-React Native may be on its way to earning a place in the same club. Once we get past the fact that JavaScript on Android and HTML in JavaScript seem pretty damn weird at first, there’s a lot to like."/>
-
-<meta property="og:title" content="React Native: Is It Worth It?" />
-<meta property="og:description" content="Intro When new technologies start gaining momentum in the Android community, the pragmatic (or lazy) among us eventually have to ask ourselves, “Is it worth it?” After the initial arrival and departure of the hype train, some of these become trusted tools we use in almost every app. Think RxJava and Dagger.
-React Native may be on its way to earning a place in the same club. Once we get past the fact that JavaScript on Android and HTML in JavaScript seem pretty damn weird at first, there’s a lot to like." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://andydyer.org/blog/2017/11/27/react-native-is-it-worth-it/" />
-<meta property="article:published_time" content="2017-11-27T21:35:15+00:00" />
-<meta property="article:modified_time" content="2017-11-27T21:35:15+00:00" />
-
-
-    
-
-
-
-
-
-
-<link rel="stylesheet" href="https://andydyer.org/scss/hyde-hyde.285beca3f63f157a40d3c48f51b3286807aa0a823a334b4c42a20353b99202c5.css" integrity="sha256-KFvso/Y/FXpA08SPUbMoaAeqCoI6M0tMQqIDU7mSAsU=">
-
-
-<link rel="stylesheet" href="https://andydyer.org/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
-
-
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <!-- Icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://andydyer.org/apple-touch-icon-144-precomposed.png">
-    <link rel="shortcut icon" href="https://andydyer.org/favicon.png">
-    
-    
-
-</head>
-
-
-    <body class="theme-base-0g ">
-    
-<div class="sidebar">
-  <div class="container ">
-    <div class="sidebar-about">
-      
-      <div class="author-image">
-        <a href="https://andydyer.org/">
-          
-            <img src="https://www.gravatar.com/avatar/e0ac1256093c733a5d5a26085b90966f?s=240&d=mp" class="img--circle img--headshot element--center" alt="gravatar">
-          
-        </a>
-      </div>
-      <span class="site__title">
-        <a href="https://andydyer.org/">Andy Dyer</a>
-      </span> 
-      <p class="site__description">
-        Senior Android Engineer <a href='https://twitter.com/zalandotech'>@ZalandoTech</a>, editor <a href='https://twitter.com/proandroiddev'>@ProAndroidDev</a>, occasional conference speaker.
-      </p>
-    </div>
-    <div class="collapsible-menu">
-      <input type="checkbox" id="menuToggle">
-      <label for="menuToggle">Andy Dyer</label>
-      <div class="menu-content">
-        <div>
-	<ul class="sidebar-nav">
-		 
-		 
-			 
-				<li>
-					<a href="https://andydyer.org/categories/android">
-						<span>Android</span>
-					</a>
-				</li>
-			 
-		 
-			 
-				<li>
-					<a href="https://andydyer.org/categories/speaking">
-						<span>Speaking</span>
-					</a>
-				</li>
-			 
-		 
-			 
-				<li>
-					<a href="https://andydyer.org/blog/2009/04/19/bands-ive-seen-live">
-						<span>Bands I&#39;ve Seen Live</span>
-					</a>
-				</li>
-			 
-		
-	</ul>
-</div>
-
-        <section class="social">
-	
-	<a href="https://twitter.com/dammitandy" rel="me"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a>
-	
-	
-	
-	<a href="https://github.com/abdyer" rel="me"><i class="fab fa-github fa-lg" aria-hidden="true"></i></a>
-	
-	
-	
-	
-	
-	
-	
-	<a href="https://linkedin.com/in/abdyer" rel="me"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a>
-	
-	
-	
-	
-	
-	
-	
-	
-</section>
-
-      </div>
-    </div>
-    
-
-
-  </div>
-</div>
-
-        <div class="content container">
-            
-    
-<article>
-  <header>
-    <h1>React Native: Is It Worth It?</h1>
-    
-    
-<div class="post__meta">
-    
-    
-      <i class="fas fa-calendar-alt"></i> Nov 27, 2017
-    
-    
-    
-      
-      
-          in
-          
-          
-              <a class="badge badge-category" href="https://andydyer.org/categories/android">ANDROID</a>
-              •
-          
-              <a class="badge badge-category" href="https://andydyer.org/categories/conferences">CONFERENCES</a>
-              •
-          
-              <a class="badge badge-category" href="https://andydyer.org/categories/speaking">SPEAKING</a>
-              
-          
-      
-    
-    
-    
-    <br/>
-    <i class="fas fa-clock"></i> 17 min read
-</div>
-
-
-  </header>
-  
-  
-  <div class="post">
-    <h3 id="intro">Intro</h3>
-<p>When new technologies start gaining momentum in the Android community, the pragmatic (or lazy) among us eventually have to ask ourselves, “Is it worth it?” After the initial arrival and departure of the hype train, some of these become trusted tools we use in almost every app. Think <a href="https://github.com/ReactiveX/RxJava">RxJava</a> and <a href="https://google.github.io/dagger/">Dagger</a>.</p>
-<p><a href="https://facebook.github.io/react-native/">React Native</a> may be on its way to earning a place in the same club. Once we get past the fact that JavaScript on Android and HTML in JavaScript seem pretty damn weird at first, there’s a lot to like. Seeing your changes on a device almost instantly is a love-at-first-sight kind of thing. And rethinking your app architecture as a series of actions, state changes, and UI render phases can eliminate a surprising number of silly bugs.</p>
-<p>A dive into every new technology starts with the flashy “type these commands and run your ‘Hello World’ app” tutorial. This is not that kind of post. Instead, I’ll recap my experience digging into React Native for real world use. From integrating RN code into an existing Java/Kotlin app to dealing with the kind of problems they never mention in the README, I’ll cover what you need to know to decide if React Native is really worth your time.
-<br/><br/></p>
-<h3 id="why-react-native">Why React Native?</h3>
-<p>As I see it, there are four reasons why you might want to consider using React Native:</p>
-<ol>
-<li><strong>Fast Iteration</strong> - Hot reloading enables fast iteration as changes show up on an emulator instantly.</li>
-<li><strong>Cross Platform</strong> - Much of the code can be shared between Android and iOS.</li>
-<li><strong>Dynamic Code Updates</strong> - React Native is unique it its ability to push updates to devices without requiring an app release.</li>
-<li><strong>Learning Something New</strong> - Web developers want to build mobile apps and mobile developers want to learn about web development. And some (like myself), want to ease back into web development after focusing on mobile for the last several years.
-<br/><br/></li>
-</ol>
-<h3 id="react-architecture">React Architecture</h3>
-<p>These days, most large Android apps either adhere to the <a href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93presenter">MVP</a> or <a href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel">MVVM</a> architecture. Models, state changes, and UI logic are kept separated. But how and when the UI is updated is largely up to us to decide on a case by case basis. With React, these decisions have been made for us. Our UI is driven by state changes and that’s pretty much it. State is a first class citizen and the UI is rendered anytime it changes. By breaking the UI into components with a unidirectional data flow, code is organized into small, reusable building blocks following a well defined pattern:</p>
-<p><img src="https://andydyer.org/images/react_architecture.png" alt="React Architecture" style="width: 547px; margin-left: auto; margin-right: auto; display: block" /></p>
-<h3 id="sample-app">Sample App</h3>
-<p>Let’s look at a small sample app to help visualize how things fit together:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-react" data-lang="react"><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">React</span>, { <span style="color:#a6e22e">Component</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;react&#39;</span>;
-<span style="color:#66d9ef">import</span> {
-  <span style="color:#a6e22e">AppRegistry</span>,
-  <span style="color:#a6e22e">StyleSheet</span>,
-  <span style="color:#a6e22e">Text</span>,
-  <span style="color:#a6e22e">TextInput</span>,
-  <span style="color:#a6e22e">View</span>
-} <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;react-native&#39;</span>;
-
-<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">SampleApp</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Component</span> {
-  <span style="color:#a6e22e">constructor</span>(<span style="color:#a6e22e">props</span>) {
-    <span style="color:#66d9ef">super</span>(<span style="color:#a6e22e">props</span>);
-    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span> <span style="color:#f92672">=</span> {<span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;&#39;</span>};
+<span style=color:#66d9ef>export</span> <span style=color:#66d9ef>default</span> <span style=color:#66d9ef>class</span> <span style=color:#a6e22e>SampleApp</span> <span style=color:#66d9ef>extends</span> <span style=color:#a6e22e>Component</span> {
+  <span style=color:#a6e22e>constructor</span>(<span style=color:#a6e22e>props</span>) {
+    <span style=color:#66d9ef>super</span>(<span style=color:#a6e22e>props</span>);
+    <span style=color:#66d9ef>this</span>.<span style=color:#a6e22e>state</span> <span style=color:#f92672>=</span> {<span style=color:#a6e22e>name</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;&#39;</span>};
   }
 
-  <span style="color:#a6e22e">render</span>() {
-    <span style="color:#66d9ef">return</span> (
-      &lt;<span style="color:#f92672">View</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">styles</span>.<span style="color:#a6e22e">container</span>}&gt;
-        &lt;<span style="color:#f92672">TextInput</span>
-          <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">styles</span>.<span style="color:#a6e22e">textInput</span>}
-          <span style="color:#a6e22e">placeholder</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Enter your name&#34;</span>
-          <span style="color:#a6e22e">onChangeText</span><span style="color:#f92672">=</span>{<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">setName</span>} /&gt;
-        {<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">name</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">&amp;&amp;</span>
-          &lt;<span style="color:#f92672">Text</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">styles</span>.<span style="color:#a6e22e">greeting</span>}&gt;
-            <span style="color:#a6e22e">Hello</span>, {<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">state</span>.<span style="color:#a6e22e">name</span>}<span style="color:#f92672">!</span>
-          &lt;/<span style="color:#f92672">Text</span>&gt;}
-      &lt;/<span style="color:#f92672">View</span>&gt;
+  <span style=color:#a6e22e>render</span>() {
+    <span style=color:#66d9ef>return</span> (
+      &lt;<span style=color:#f92672>View</span> <span style=color:#a6e22e>style</span><span style=color:#f92672>=</span>{<span style=color:#a6e22e>styles</span>.<span style=color:#a6e22e>container</span>}&gt;
+        &lt;<span style=color:#f92672>TextInput</span>
+          <span style=color:#a6e22e>style</span><span style=color:#f92672>=</span>{<span style=color:#a6e22e>styles</span>.<span style=color:#a6e22e>textInput</span>}
+          <span style=color:#a6e22e>placeholder</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;Enter your name&#34;</span>
+          <span style=color:#a6e22e>onChangeText</span><span style=color:#f92672>=</span>{<span style=color:#66d9ef>this</span>.<span style=color:#a6e22e>setName</span>} /&gt;
+        {<span style=color:#66d9ef>this</span>.<span style=color:#a6e22e>state</span>.<span style=color:#a6e22e>name</span>.<span style=color:#a6e22e>length</span> <span style=color:#f92672>&amp;&amp;</span>
+          &lt;<span style=color:#f92672>Text</span> <span style=color:#a6e22e>style</span><span style=color:#f92672>=</span>{<span style=color:#a6e22e>styles</span>.<span style=color:#a6e22e>greeting</span>}&gt;
+            <span style=color:#a6e22e>Hello</span>, {<span style=color:#66d9ef>this</span>.<span style=color:#a6e22e>state</span>.<span style=color:#a6e22e>name</span>}<span style=color:#f92672>!</span>
+          &lt;/<span style=color:#f92672>Text</span>&gt;}
+      &lt;/<span style=color:#f92672>View</span>&gt;
     );
   }
 
-  <span style="color:#a6e22e">setName</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">name</span>) =&gt; {
-    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">setState</span>({<span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">name</span>});
+  <span style=color:#a6e22e>setName</span> <span style=color:#f92672>=</span> (<span style=color:#a6e22e>name</span>) =&gt; {
+    <span style=color:#66d9ef>this</span>.<span style=color:#a6e22e>setState</span>({<span style=color:#a6e22e>name</span><span style=color:#f92672>:</span> <span style=color:#a6e22e>name</span>});
   }
 }
 
-<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">styles</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">StyleSheet</span>.<span style="color:#a6e22e">create</span>({
-  <span style="color:#a6e22e">container</span><span style="color:#f92672">:</span> {
-    <span style="color:#a6e22e">padding</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">16</span>
+<span style=color:#66d9ef>const</span> <span style=color:#a6e22e>styles</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>StyleSheet</span>.<span style=color:#a6e22e>create</span>({
+  <span style=color:#a6e22e>container</span><span style=color:#f92672>:</span> {
+    <span style=color:#a6e22e>padding</span><span style=color:#f92672>:</span> <span style=color:#ae81ff>16</span>
   },
-  <span style="color:#a6e22e">textInput</span><span style="color:#f92672">:</span> {
-    <span style="color:#a6e22e">marginBottom</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">16</span>
+  <span style=color:#a6e22e>textInput</span><span style=color:#f92672>:</span> {
+    <span style=color:#a6e22e>marginBottom</span><span style=color:#f92672>:</span> <span style=color:#ae81ff>16</span>
   },
-  <span style="color:#a6e22e">greeting</span><span style="color:#f92672">:</span> {
-    <span style="color:#a6e22e">fontSize</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">24</span>,
-    <span style="color:#a6e22e">fontWeight</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;bold&#39;</span>
+  <span style=color:#a6e22e>greeting</span><span style=color:#f92672>:</span> {
+    <span style=color:#a6e22e>fontSize</span><span style=color:#f92672>:</span> <span style=color:#ae81ff>24</span>,
+    <span style=color:#a6e22e>fontWeight</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;bold&#39;</span>
   }
 });
 
-<span style="color:#a6e22e">AppRegistry</span>.<span style="color:#a6e22e">registerComponent</span>(<span style="color:#e6db74">&#39;SampleProject&#39;</span>, () =&gt; <span style="color:#a6e22e">SampleApp</span>);
-</code></pre></div><p><a href="https://goo.gl/h5g2eg">Run It!</a></p>
-<p>At the top of the file, we import the components we want to reference in this file. First we import some React classes, followed by the React Native classes we’ll be using.</p>
-<p>Below that, we declare a SampleApp component that extends React’s <code>Component</code> class. Our constructor takes a map of properties passed from the parent, and calls through to <code>super()</code>. Then, we initialize our state map with an empty string for the greeting we’ll be displaying.</p>
-<p>If nothing else, most components will have a <code>render()</code> method. Here, we use a hybrid of HTML and Javascript known as JSX to return the view we want to render. In this case, we’re rendering a text input and a greeting based on the value of <code>this.state.greeting</code>, or nothing if no text has been entered.</p>
-<p>Any changes to the state map cause the <code>render()</code> method to run again. As we type in the text box, the greeting text is updated, which instantly updates the greeting text on screen. State management in React is almost as complicated of a topic as React itself, so I won’t delve into that here. <a href="https://redux.js.org/">Redux</a> is currently the preferred state management container for large apps, but most intro tutorials will caution against using it until you get far enough with properties and the state map to encounter some of the problems Redux solves.</p>
-<p>Below our SampleApp component, we define the stylesheet classes you see applied in the <code>render()</code> method. Most of the style attributes are the same CSS you’d use for the web (after converting from kebab-case to camel case). Dimensions specified here translate to <code>dp</code> on Android and logical pixels on iOS. Finally, we register our component with React Native, providing a name we can use to load it on the native side.
-<br/><br/></p>
-<h3 id="integration-with-existing-apps">Integration with Existing Apps</h3>
-<p>Now that we have a basic understanding of how React apps are architected and how React Native brings that to Android, let’s talk about my experience integrating React Native into an existing app. I won’t cover setting up a new all React Native app from scratch, as there are <a href="https://facebook.github.io/react-native/docs/getting-started.html">tutorials</a> and <a href="https://github.com/react-community/create-react-native-app">generators</a> that make this pretty straightforward.</p>
-<p>I started by following the <a href="https://facebook.github.io/react-native/docs/integration-with-existing-apps.html">Integration with Existing Apps</a> tutorial on the React Native documentation site. In a nutshell, this involves running some <a href="https://yarnpkg.com/en/">yarn</a> commands to pull down React Native dependencies, making a few <code>build.gradle</code> changes, and adding an Activity to load a “Hello World” Javascript file. There are several steps, but they’re pretty easy to follow. Then we run <code>yarn start</code> to bundle the Javascript (a step replaced by a pre-build task for release builds) and run our app. Simple enough, right?</p>
-<p>Wrong. When I tried this using v0.45, I encountered my first problem. At that time, React Native was using <a href="http://square.github.io/okhttp/">OkHttp</a> v3.4 and our app was using a newer version. Between those versions, there were several breaking changes that meant we could not simply force a newer version of the library. For those of you playing blog post BINGO, there’s your first <a href="http://square.github.io/">Square library</a> mention.</p>
-<p>But, it’s open source. Surely someone else has had the problem and solved it, right? Correct! There was even a <a href="https://github.com/facebook/react-native/pull/11835">pull request</a> open to update React Native to v3.8. Let’s take a look at a few key parts of the discussion:</p>
-<p><img src="https://andydyer.org/images/okhttp_pr_fb_app_updates.png" alt="React Native app updates" style="width: 1178px; margin-left: auto; margin-right: auto; display: block" /></p>
-<p>So, how might we proceed?</p>
-<p><img src="https://andydyer.org/images/okhttp_pr_fb_dependency_embed.png" alt="React Native embed dependency" style="width: 1178px; margin-left: auto; margin-right: auto; display: block" /></p>
-<p><img src="https://andydyer.org/images/okhttp_pr_fb_dependency_shading.png" alt="React Native dependency shading" style="width: 1178px; margin-left: auto; margin-right: auto; display: block" /></p>
-<p><strong>FOUR MONTHS</strong> after it was originally opened, the PR was merged. Problem solved? Nope!</p>
-<p><img src="https://andydyer.org/images/okhttp_pr_fb_downgrade.png" alt="React Native OkHttp downgrade" style="width: 1178px; margin-left: auto; margin-right: auto; display: block" /></p>
-<p>A couple weeks later, OkHttp v3.8 had an issue of its own that required React Native to <a href="https://github.com/facebook/react-native/issues/13996">downgrade</a> to v3.6! What a rollercoaster!</p>
-<p>I've since learned that there a few different ways to integrate React Native dependencies into an existing app:</p>
-<ol>
-<li><strong>Add dependencies directly to your app</strong> - Unfortunately, this won't work if your Android and iOS apps are in separate repos. Even if you're cutting-edge enough to be using a monorepo, this approach means every developer on your team has to know about the React Native portion of your codebase.</li>
-<li><strong>Package dependencies in a separate library</strong> - This seems to be the obvious alternative to the first option until you realize that React Native is distributed via <a href="https://www.npmjs.com/">NPM</a> rather than standard native mechanisms like Maven/Gradle/Cocoa Pods. If you want to go this route, you have to package React Native itself and any libraries with native code manually along with your own React Native features.</li>
-<li><strong><a href="https://github.com/electrode-io/electrode-native">Electrode Native</a> from WalmartLabs</strong> - I've spent some time with this and it seems to be the best option. The documentation is very thorough but it takes time and patience to set things up. I plan to share more about my experience soon, but suffice it to say it solves the issues with the previous two approaches in a way that should scale for large distributed teams (because Walmart).
-<br/><br/></li>
-</ol>
-<h3 id="the-oss-license-drama">The OSS License Drama</h3>
-<p>On top of the integration challenges, Facebook also recently <a href="https://code.facebook.com/posts/112130496157735/explaining-react-s-license/">clarified their position</a> regarding the open source license for React Native. I’m no lawyer, but the license for Facebook open source projects makes them free to use with the stipulation that if you sue them for patent infringement, you lose the license. Does your company do anything that Facebook might do in the future? If so, this is essentially the old mobster line updated for the digital world:</p>
-<blockquote>
-<p>Nice app you got there. It would be a shame if anything&hellip;happened to it.</p>
-</blockquote>
-<p>There were plenty of rants online about this, while others don’t seem too concerned judging by conversations I had at a recent React Meetup in Berlin. The fallout even led to companies like WordPress <a href="https://ma.tt/2017/09/on-react-and-wordpress/">ditching a nearly finished React rewrite</a> for something less legally volatile.</p>
-<p>Either way, this brings us to our first consideration when deciding to use React Native:</p>
-<br/>
-# It’s a big dependency and may limit your ability to upgrade other libraries.
-<br/><br/>
-<p>Large companies open sourcing things are more focused on their <a href="https://www.youtube.com/watch?v=K0NNVm5ajMQ">own needs</a> (and rightly so) than the community of developers using their projects. Popular libraries also serve as a recruiting tool. Solving problems for others is a bonus.
-<br/><br/></p>
-<h3 id="developing-with-react-native">Developing with React Native</h3>
-<p>Assuming you still aren’t deterred, let’s talk a bit about what it’s like to actually develop an app with React Native. First things first, you’ll need to pick an editor. While you could certainly use Android Studio to edit Javascript files, your best bet is to use a separate text editor that provides first class support for them. Both <a href="https://atom.io/">Atom</a> and Microsoft’s <a href="https://code.visualstudio.com/">VS Code</a> are good choices with a lot of plugins available. I started out using Atom at first and later VS Code along with the Chrome Developer Tools for debugging. Be sure to pick an editor you’re comfortable with, as most of your React Native development will take place there rather than in Android Studio or Xcode.</p>
-<p>Coming from Android Studio, most text editors leave a lot to be desired. Import statements must be added manually&hellip;like a caveman. Autocomplete is usually just an indexed list of words in open files unless you install some plugins. Most of the quick fix/refactoring tools we’ve come to rely on are typically not available (although VS Code is adding more and more with each update). This also means that syntax errors may not be apparent until you check the console (where your <code>yarn start</code> command is running) or try running your changes on a device. Thankfully, neither of these take anywhere near as long as waiting on a Gradle build to run and deploy to an emulator.</p>
-<p>Much has been written about how inferior JavaScript is compared to other languages and yet here we are using it heavily more than 20 years after its initial release. jQuery made it more palatable for a while but has since been supplanted by ES6, which fixes many of its shortcomings. Even so, those of us coming from statically typed languages will likely prefer using Facebook’s <a href="https://flow.org/">Flow</a> or Microsoft’s <a href="https://www.typescriptlang.org/">TypeScript</a> to bring type safety to our React Native apps.</p>
-<p>We’ve chosen TypeScript (side note, TypeScript vs Flow is akin to the VIM/emacs religious wars) for its first class support in VS Code. This gives us refactoring, go to definition and a lot of other IDE related features. Here’s a small example of a component using TypeScript:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript"><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">Props</span> { }
-<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">State</span> {
-  <span style="color:#a6e22e">greeting</span>: <span style="color:#66d9ef">string</span>,
-  <span style="color:#a6e22e">isBoolean</span>: <span style="color:#66d9ef">boolean</span>,
-  <span style="color:#a6e22e">someCount</span>: <span style="color:#66d9ef">number</span>
+<span style=color:#a6e22e>AppRegistry</span>.<span style=color:#a6e22e>registerComponent</span>(<span style=color:#e6db74>&#39;SampleProject&#39;</span>, () =&gt; <span style=color:#a6e22e>SampleApp</span>);
+</code></pre></div><p><a href=https://goo.gl/h5g2eg>Run It!</a></p><p>At the top of the file, we import the components we want to reference in this file. First we import some React classes, followed by the React Native classes we’ll be using.</p><p>Below that, we declare a SampleApp component that extends React’s <code>Component</code> class. Our constructor takes a map of properties passed from the parent, and calls through to <code>super()</code>. Then, we initialize our state map with an empty string for the greeting we’ll be displaying.</p><p>If nothing else, most components will have a <code>render()</code> method. Here, we use a hybrid of HTML and Javascript known as JSX to return the view we want to render. In this case, we’re rendering a text input and a greeting based on the value of <code>this.state.greeting</code>, or nothing if no text has been entered.</p><p>Any changes to the state map cause the <code>render()</code> method to run again. As we type in the text box, the greeting text is updated, which instantly updates the greeting text on screen. State management in React is almost as complicated of a topic as React itself, so I won’t delve into that here. <a href=https://redux.js.org/>Redux</a> is currently the preferred state management container for large apps, but most intro tutorials will caution against using it until you get far enough with properties and the state map to encounter some of the problems Redux solves.</p><p>Below our SampleApp component, we define the stylesheet classes you see applied in the <code>render()</code> method. Most of the style attributes are the same CSS you’d use for the web (after converting from kebab-case to camel case). Dimensions specified here translate to <code>dp</code> on Android and logical pixels on iOS. Finally, we register our component with React Native, providing a name we can use to load it on the native side.<br><br></p><h3 id=integration-with-existing-apps>Integration with Existing Apps</h3><p>Now that we have a basic understanding of how React apps are architected and how React Native brings that to Android, let’s talk about my experience integrating React Native into an existing app. I won’t cover setting up a new all React Native app from scratch, as there are <a href=https://facebook.github.io/react-native/docs/getting-started.html>tutorials</a> and <a href=https://github.com/react-community/create-react-native-app>generators</a> that make this pretty straightforward.</p><p>I started by following the <a href=https://facebook.github.io/react-native/docs/integration-with-existing-apps.html>Integration with Existing Apps</a> tutorial on the React Native documentation site. In a nutshell, this involves running some <a href=https://yarnpkg.com/en/>yarn</a> commands to pull down React Native dependencies, making a few <code>build.gradle</code> changes, and adding an Activity to load a “Hello World” Javascript file. There are several steps, but they’re pretty easy to follow. Then we run <code>yarn start</code> to bundle the Javascript (a step replaced by a pre-build task for release builds) and run our app. Simple enough, right?</p><p>Wrong. When I tried this using v0.45, I encountered my first problem. At that time, React Native was using <a href=http://square.github.io/okhttp/>OkHttp</a> v3.4 and our app was using a newer version. Between those versions, there were several breaking changes that meant we could not simply force a newer version of the library. For those of you playing blog post BINGO, there’s your first <a href=http://square.github.io/>Square library</a> mention.</p><p>But, it’s open source. Surely someone else has had the problem and solved it, right? Correct! There was even a <a href=https://github.com/facebook/react-native/pull/11835>pull request</a> open to update React Native to v3.8. Let’s take a look at a few key parts of the discussion:</p><p><img src=https://andydyer.org/images/okhttp_pr_fb_app_updates.png alt="React Native app updates" style=width:1178px;margin-left:auto;margin-right:auto;display:block></p><p>So, how might we proceed?</p><p><img src=https://andydyer.org/images/okhttp_pr_fb_dependency_embed.png alt="React Native embed dependency" style=width:1178px;margin-left:auto;margin-right:auto;display:block></p><p><img src=https://andydyer.org/images/okhttp_pr_fb_dependency_shading.png alt="React Native dependency shading" style=width:1178px;margin-left:auto;margin-right:auto;display:block></p><p><strong>FOUR MONTHS</strong> after it was originally opened, the PR was merged. Problem solved? Nope!</p><p><img src=https://andydyer.org/images/okhttp_pr_fb_downgrade.png alt="React Native OkHttp downgrade" style=width:1178px;margin-left:auto;margin-right:auto;display:block></p><p>A couple weeks later, OkHttp v3.8 had an issue of its own that required React Native to <a href=https://github.com/facebook/react-native/issues/13996>downgrade</a> to v3.6! What a rollercoaster!</p><p>I&rsquo;ve since learned that there a few different ways to integrate React Native dependencies into an existing app:</p><ol><li><strong>Add dependencies directly to your app</strong> - Unfortunately, this won&rsquo;t work if your Android and iOS apps are in separate repos. Even if you&rsquo;re cutting-edge enough to be using a monorepo, this approach means every developer on your team has to know about the React Native portion of your codebase.</li><li><strong>Package dependencies in a separate library</strong> - This seems to be the obvious alternative to the first option until you realize that React Native is distributed via <a href=https://www.npmjs.com/>NPM</a> rather than standard native mechanisms like Maven/Gradle/Cocoa Pods. If you want to go this route, you have to package React Native itself and any libraries with native code manually along with your own React Native features.</li><li><strong><a href=https://github.com/electrode-io/electrode-native>Electrode Native</a> from WalmartLabs</strong> - I&rsquo;ve spent some time with this and it seems to be the best option. The documentation is very thorough but it takes time and patience to set things up. I plan to share more about my experience soon, but suffice it to say it solves the issues with the previous two approaches in a way that should scale for large distributed teams (because Walmart).<br><br></li></ol><h3 id=the-oss-license-drama>The OSS License Drama</h3><p>On top of the integration challenges, Facebook also recently <a href=https://code.facebook.com/posts/112130496157735/explaining-react-s-license/>clarified their position</a> regarding the open source license for React Native. I’m no lawyer, but the license for Facebook open source projects makes them free to use with the stipulation that if you sue them for patent infringement, you lose the license. Does your company do anything that Facebook might do in the future? If so, this is essentially the old mobster line updated for the digital world:</p><blockquote><p>Nice app you got there. It would be a shame if anything&mldr;happened to it.</p></blockquote><p>There were plenty of rants online about this, while others don’t seem too concerned judging by conversations I had at a recent React Meetup in Berlin. The fallout even led to companies like WordPress <a href=https://ma.tt/2017/09/on-react-and-wordpress/>ditching a nearly finished React rewrite</a> for something less legally volatile.</p><p>Either way, this brings us to our first consideration when deciding to use React Native:</p><br># It’s a big dependency and may limit your ability to upgrade other libraries.<br><br><p>Large companies open sourcing things are more focused on their <a href="https://www.youtube.com/watch?v=K0NNVm5ajMQ">own needs</a> (and rightly so) than the community of developers using their projects. Popular libraries also serve as a recruiting tool. Solving problems for others is a bonus.<br><br></p><h3 id=developing-with-react-native>Developing with React Native</h3><p>Assuming you still aren’t deterred, let’s talk a bit about what it’s like to actually develop an app with React Native. First things first, you’ll need to pick an editor. While you could certainly use Android Studio to edit Javascript files, your best bet is to use a separate text editor that provides first class support for them. Both <a href=https://atom.io/>Atom</a> and Microsoft’s <a href=https://code.visualstudio.com/>VS Code</a> are good choices with a lot of plugins available. I started out using Atom at first and later VS Code along with the Chrome Developer Tools for debugging. Be sure to pick an editor you’re comfortable with, as most of your React Native development will take place there rather than in Android Studio or Xcode.</p><p>Coming from Android Studio, most text editors leave a lot to be desired. Import statements must be added manually&mldr;like a caveman. Autocomplete is usually just an indexed list of words in open files unless you install some plugins. Most of the quick fix/refactoring tools we’ve come to rely on are typically not available (although VS Code is adding more and more with each update). This also means that syntax errors may not be apparent until you check the console (where your <code>yarn start</code> command is running) or try running your changes on a device. Thankfully, neither of these take anywhere near as long as waiting on a Gradle build to run and deploy to an emulator.</p><p>Much has been written about how inferior JavaScript is compared to other languages and yet here we are using it heavily more than 20 years after its initial release. jQuery made it more palatable for a while but has since been supplanted by ES6, which fixes many of its shortcomings. Even so, those of us coming from statically typed languages will likely prefer using Facebook’s <a href=https://flow.org/>Flow</a> or Microsoft’s <a href=https://www.typescriptlang.org/>TypeScript</a> to bring type safety to our React Native apps.</p><p>We’ve chosen TypeScript (side note, TypeScript vs Flow is akin to the VIM/emacs religious wars) for its first class support in VS Code. This gives us refactoring, go to definition and a lot of other IDE related features. Here’s a small example of a component using TypeScript:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-typescript data-lang=typescript><span style=color:#66d9ef>export</span> <span style=color:#66d9ef>interface</span> <span style=color:#a6e22e>Props</span> { }
+<span style=color:#66d9ef>export</span> <span style=color:#66d9ef>interface</span> <span style=color:#a6e22e>State</span> {
+  <span style=color:#a6e22e>greeting</span>: <span style=color:#66d9ef>string</span>,
+  <span style=color:#a6e22e>isBoolean</span>: <span style=color:#66d9ef>boolean</span>,
+  <span style=color:#a6e22e>someCount</span>: <span style=color:#66d9ef>number</span>
 }
 
-<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">SampleApp</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">React</span>.<span style="color:#a6e22e">Component</span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">Props</span>, <span style="color:#a6e22e">State</span><span style="color:#f92672">&gt;</span> {
+<span style=color:#66d9ef>export</span> <span style=color:#66d9ef>default</span> <span style=color:#66d9ef>class</span> <span style=color:#a6e22e>SampleApp</span> <span style=color:#66d9ef>extends</span> <span style=color:#a6e22e>React</span>.<span style=color:#a6e22e>Component</span>&lt;<span style=color:#f92672>Props</span><span style=color:#960050;background-color:#1e0010>,</span> <span style=color:#a6e22e>State</span>&gt; {
 
-  <span style="color:#a6e22e">sayHi</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">name</span>: <span style="color:#66d9ef">string</span>)<span style="color:#f92672">:</span> <span style="color:#66d9ef">string</span> <span style="color:#f92672">=</span><span style="color:#f92672">&gt;</span> {
-    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">Hi, </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">name</span><span style="color:#e6db74">}</span><span style="color:#e6db74">!</span><span style="color:#e6db74">`</span>;
+  <span style=color:#a6e22e>sayHi</span> <span style=color:#f92672>=</span> (<span style=color:#a6e22e>name</span>: <span style=color:#66d9ef>string</span>)<span style=color:#f92672>:</span> <span style=color:#66d9ef>string</span> <span style=color:#f92672>=&gt;</span> {
+    <span style=color:#66d9ef>return</span> <span style=color:#e6db74>`Hi, </span><span style=color:#e6db74>${</span><span style=color:#a6e22e>name</span><span style=color:#e6db74>}</span><span style=color:#e6db74>!`</span>;
   }
 }
-</code></pre></div><p>Getting comfortable with React Native involves a learning curve similar to any large architectural framework like Dagger or language like <a href="https://kotlinlang.org/">Kotlin</a>. For many, working with React Native means learning React and Javascript simultaneously.
-<br/><br/></p>
-<h3 id="not-so-great-things">Not-So-Great-Things</h3>
-<p>As you can see, developing an app with React Native requires learning quite a few new concepts. In addition, there are a few less-than-ideal things worth mentioning.</p>
-<p>First, I was surprised to learn that there is currently no built-in way to save and restore state when handling configuration changes like an orientation change. This forces us to use the <code>android:configChanges=&quot;keyboard|keyboardHidden|orientation|screenSize&quot;</code> hack we’ve all learned is not the right way to do this. Or, we could lock the app orientation to portrait. But I’m not sure which is worse.</p>
-<p>What’s more, many standard Android things like Material Design widgets and language support require third party libraries. It’s great to see the community fill these needs, but an officially supported solution for some of the most frequently used platform features would be comforting.</p>
-<p>When all else fails, interop with native code is possible, but requires some additional classes and configuration to define the interface between React Native and your JVM code.</p>
-<p>This brings us to our second consideration:</p>
-<br/>
-# It’s way different than normal Android development.
-<br/><br/>
-<p>If you have a team of React or Javascript developers and need to build a mobile app, this may be perfect. However, if you have a team of longtime Android engineers, React Native may be a tougher sell, especially with things like Kotlin going mainstream and increasingly better tooling.
-<br/><br/></p>
-<h3 id="dont-drive-too-fast">Don't Drive Too Fast</h3>
-<p>As I mentioned in the intro, one of the killer features of React Native is the ability to change code and see it on a device almost instantly. Or, to put a darker spin on it:</p>
-<p><img src="https://andydyer.org/images/bad_app_really_fast.png" alt="Build a bad app really fast" style="width: 725px; margin-left: auto; margin-right: auto; display: block" />
-<a href="https://twitter.com/mxcl/status/883159808643395588">https://twitter.com/mxcl/status/883159808643395588</a></p>
-<p>Trying to build too much too quickly with any technology before having a solid grasp of the fundamentals can lead to technical debt. Luckily, there are tons of great tutorials and books available to guide you.</p>
-<p>One proven way to ensure quality code is to test as much of it as possible. There are a few frameworks that help us with this on React Native:</p>
-<ol>
-<li><strong><a href="https://facebook.github.io/jest/docs/en/tutorial-react-native.html">Jest</a></strong> - Snapshot &amp; unit testing. React Native apps have this configured out of the box.</li>
-<li><strong><a href="https://github.com/wix/detox">Detox</a></strong> - <a href="https://developer.android.com/training/testing/espresso/index.html">Espresso</a> like UI testing. Also known as end-to-end or gray box testing, Detox runs your tests on an emulator so you can validate what the user actually sees.</li>
-<li><strong><a href="https://github.com/airbnb/enzyme">Enzyme</a></strong> - Shallow rendering means tests can run a bit faster than Jest with a more flexible API.
-<br/><br/></li>
-</ol>
-<h3 id="cross-platform">Cross Platform</h3>
-<p>Cross platform code sharing is also routinely mentioned as a benefit of React Native. While we’ve been able to have the same code run on both Android and iOS, things like keyboard behavior and platform specific styles often mean diverging at some point. Best practices for cross-platform code sharing are still evolving. How much to share and what is okay to duplicate are the two toughest questions here. As much possible, breaking functionality down into reusable components and differing only where necessary should give you the flexibility required to keep the app feeling native on each platform.</p>
-<p>There are a couple ways to specify platform specific behavior. First, we can use a simple <code>if (Platform.OS === 'android')</code> check in our code, similar to how we conditionally handle OS version differences on Android. But sprinkling code like this throughout your app will make these important platform specific differences difficult to maintain. The second, slightly better option is to include the <code>*.android.js</code> or <code>*.ios.js</code> designation in your file names. By convention, files ending with <code>*.android.js</code> will be loaded by Android and those ending with <code>*.ios.js</code> will be loaded by iOS. If you are able to reduce platform-specific code to small components and minor style differences, this approach should work a bit better.</p>
-<p>This brings us to our third consideration when deciding to use React Native:</p>
-<br/>
-# Clean and maintainable cross-platform code requires the commitment of everyone on the team.
-<br/><br/>
-<h3 id="dynamic-code-updates">Dynamic Code Updates</h3>
-<p>Another feature of React Native that is not available to traditional Android apps is dynamic code updates via Microsoft’s <a href="https://docs.microsoft.com/en-us/appcenter/distribution/codepush/">Code Push</a> service. With Code Push, you can deploy updated Javascript code to your users without deploying a full app update to Google Play or the Apple App Store. This means bug fixes and new features can get to your users as quickly as possible. While this sounds too good to be true for anyone familiar with Apple’s stringent review process or anyone who’s received one of those scary automated terms violations emails from Google Play, the <a href="https://microsoft.github.io/code-push/faq/index.html">FAQ</a> on the Code Push site assures us everything’s cool:</p>
-<blockquote>
-<p>According to section 3.3.2 of Apple’s developer agreement, as long as you are using the CodePush service to release bug fixes and improvements/features that maintain the app’s original/presented purpose (i.e. don’t CodePush a calculator into a first-person shooter), then you will be fine, and your users will be happy. In order to provide a tangible example, our team published a (pretty cheesy!) CodePush-ified game to the Google Play Store and Apple App Store, and had no problems getting it through the review process.</p>
-</blockquote>
-<p>So, while the official answer is “you will be fine”, it’s up to you to decide if the fact that they support their claim with a single piece of anecdotal evidence is enough for you to feel comfortable using it for your project.</p>
-<p>I’ve only given Code Push a test drive so far, but it was enough for me to be simultaneously impressed and scared of how it could be abused in the wrong hands. The documentation does a good job of explaining best practices for deploying updates without surprising the user. In short, you should ideally wait for the subsequent app session to apply dynamic updates.</p>
-<p>This brings us to our fourth and final point to consider before adopting React Native:</p>
-<br/>
-# Dynamic code updates are a game changer, but should be used responsibly.
-<br/><br/>
-<h3 id="a-react-native-ui-with-existing-native-code">A React Native UI with Existing Native Code</h3>
-<p>Since one of the primary benefits of React Native is how quickly you can see changes on a device, it’s great for rapidly prototyping a new feature. You can use this to get early feedback on an idea before investing the time to fully develop it natively. But what if you have an existing app with API and/or database code you don’t want to reimplement in Javascript?</p>
-<p>As I said earlier, React Native allows us to interface with our native app code. Leveraging this, it’s not very difficult to use existing native code to drive a UI developed in React Native.</p>
-<p>Here’s an example of how to connect React Native to <a href="https://developer.android.com/topic/libraries/architecture/livedata.html">LiveData</a>, which Google introduced at I/O this year as part of the <a href="https://developer.android.com/topic/libraries/architecture/index.html">Architecture Components</a>:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">BeerLiveDataModule</span> : ReactContextBaseJavaModule {
-  @Inject <span style="color:#66d9ef">internal</span> <span style="color:#66d9ef">lateinit</span> <span style="color:#66d9ef">var</span> repository: BeerRepository
-  @Inject <span style="color:#66d9ef">internal</span> <span style="color:#66d9ef">lateinit</span> <span style="color:#66d9ef">var</span> gson: Gson
+</code></pre></div><p>Getting comfortable with React Native involves a learning curve similar to any large architectural framework like Dagger or language like <a href=https://kotlinlang.org/>Kotlin</a>. For many, working with React Native means learning React and Javascript simultaneously.<br><br></p><h3 id=not-so-great-things>Not-So-Great-Things</h3><p>As you can see, developing an app with React Native requires learning quite a few new concepts. In addition, there are a few less-than-ideal things worth mentioning.</p><p>First, I was surprised to learn that there is currently no built-in way to save and restore state when handling configuration changes like an orientation change. This forces us to use the <code>android:configChanges="keyboard|keyboardHidden|orientation|screenSize"</code> hack we’ve all learned is not the right way to do this. Or, we could lock the app orientation to portrait. But I’m not sure which is worse.</p><p>What’s more, many standard Android things like Material Design widgets and language support require third party libraries. It’s great to see the community fill these needs, but an officially supported solution for some of the most frequently used platform features would be comforting.</p><p>When all else fails, interop with native code is possible, but requires some additional classes and configuration to define the interface between React Native and your JVM code.</p><p>This brings us to our second consideration:</p><br># It’s way different than normal Android development.<br><br><p>If you have a team of React or Javascript developers and need to build a mobile app, this may be perfect. However, if you have a team of longtime Android engineers, React Native may be a tougher sell, especially with things like Kotlin going mainstream and increasingly better tooling.<br><br></p><h3 id=dont-drive-too-fast>Don&rsquo;t Drive Too Fast</h3><p>As I mentioned in the intro, one of the killer features of React Native is the ability to change code and see it on a device almost instantly. Or, to put a darker spin on it:</p><p><img src=https://andydyer.org/images/bad_app_really_fast.png alt="Build a bad app really fast" style=width:725px;margin-left:auto;margin-right:auto;display:block>
+<a href=https://twitter.com/mxcl/status/883159808643395588>https://twitter.com/mxcl/status/883159808643395588</a></p><p>Trying to build too much too quickly with any technology before having a solid grasp of the fundamentals can lead to technical debt. Luckily, there are tons of great tutorials and books available to guide you.</p><p>One proven way to ensure quality code is to test as much of it as possible. There are a few frameworks that help us with this on React Native:</p><ol><li><strong><a href=https://facebook.github.io/jest/docs/en/tutorial-react-native.html>Jest</a></strong> - Snapshot & unit testing. React Native apps have this configured out of the box.</li><li><strong><a href=https://github.com/wix/detox>Detox</a></strong> - <a href=https://developer.android.com/training/testing/espresso/index.html>Espresso</a> like UI testing. Also known as end-to-end or gray box testing, Detox runs your tests on an emulator so you can validate what the user actually sees.</li><li><strong><a href=https://github.com/airbnb/enzyme>Enzyme</a></strong> - Shallow rendering means tests can run a bit faster than Jest with a more flexible API.<br><br></li></ol><h3 id=cross-platform>Cross Platform</h3><p>Cross platform code sharing is also routinely mentioned as a benefit of React Native. While we’ve been able to have the same code run on both Android and iOS, things like keyboard behavior and platform specific styles often mean diverging at some point. Best practices for cross-platform code sharing are still evolving. How much to share and what is okay to duplicate are the two toughest questions here. As much possible, breaking functionality down into reusable components and differing only where necessary should give you the flexibility required to keep the app feeling native on each platform.</p><p>There are a couple ways to specify platform specific behavior. First, we can use a simple <code>if (Platform.OS === 'android')</code> check in our code, similar to how we conditionally handle OS version differences on Android. But sprinkling code like this throughout your app will make these important platform specific differences difficult to maintain. The second, slightly better option is to include the <code>*.android.js</code> or <code>*.ios.js</code> designation in your file names. By convention, files ending with <code>*.android.js</code> will be loaded by Android and those ending with <code>*.ios.js</code> will be loaded by iOS. If you are able to reduce platform-specific code to small components and minor style differences, this approach should work a bit better.</p><p>This brings us to our third consideration when deciding to use React Native:</p><br># Clean and maintainable cross-platform code requires the commitment of everyone on the team.<br><br><h3 id=dynamic-code-updates>Dynamic Code Updates</h3><p>Another feature of React Native that is not available to traditional Android apps is dynamic code updates via Microsoft’s <a href=https://docs.microsoft.com/en-us/appcenter/distribution/codepush/>Code Push</a> service. With Code Push, you can deploy updated Javascript code to your users without deploying a full app update to Google Play or the Apple App Store. This means bug fixes and new features can get to your users as quickly as possible. While this sounds too good to be true for anyone familiar with Apple’s stringent review process or anyone who’s received one of those scary automated terms violations emails from Google Play, the <a href=https://microsoft.github.io/code-push/faq/index.html>FAQ</a> on the Code Push site assures us everything’s cool:</p><blockquote><p>According to section 3.3.2 of Apple’s developer agreement, as long as you are using the CodePush service to release bug fixes and improvements/features that maintain the app’s original/presented purpose (i.e. don’t CodePush a calculator into a first-person shooter), then you will be fine, and your users will be happy. In order to provide a tangible example, our team published a (pretty cheesy!) CodePush-ified game to the Google Play Store and Apple App Store, and had no problems getting it through the review process.</p></blockquote><p>So, while the official answer is “you will be fine”, it’s up to you to decide if the fact that they support their claim with a single piece of anecdotal evidence is enough for you to feel comfortable using it for your project.</p><p>I’ve only given Code Push a test drive so far, but it was enough for me to be simultaneously impressed and scared of how it could be abused in the wrong hands. The documentation does a good job of explaining best practices for deploying updates without surprising the user. In short, you should ideally wait for the subsequent app session to apply dynamic updates.</p><p>This brings us to our fourth and final point to consider before adopting React Native:</p><br># Dynamic code updates are a game changer, but should be used responsibly.<br><br><h3 id=a-react-native-ui-with-existing-native-code>A React Native UI with Existing Native Code</h3><p>Since one of the primary benefits of React Native is how quickly you can see changes on a device, it’s great for rapidly prototyping a new feature. You can use this to get early feedback on an idea before investing the time to fully develop it natively. But what if you have an existing app with API and/or database code you don’t want to reimplement in Javascript?</p><p>As I said earlier, React Native allows us to interface with our native app code. Leveraging this, it’s not very difficult to use existing native code to drive a UI developed in React Native.</p><p>Here’s an example of how to connect React Native to <a href=https://developer.android.com/topic/libraries/architecture/livedata.html>LiveData</a>, which Google introduced at I/O this year as part of the <a href=https://developer.android.com/topic/libraries/architecture/index.html>Architecture Components</a>:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-kotlin data-lang=kotlin><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>BeerLiveDataModule</span> : ReactContextBaseJavaModule {
+  @Inject <span style=color:#66d9ef>internal</span> <span style=color:#66d9ef>lateinit</span> <span style=color:#66d9ef>var</span> repository: BeerRepository
+  @Inject <span style=color:#66d9ef>internal</span> <span style=color:#66d9ef>lateinit</span> <span style=color:#66d9ef>var</span> gson: Gson
 
-  <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">lateinit</span> <span style="color:#66d9ef">var</span> liveData: LiveData&lt;List&lt;Beer&gt;&gt;
+  <span style=color:#66d9ef>private</span> <span style=color:#66d9ef>lateinit</span> <span style=color:#66d9ef>var</span> liveData: LiveData&lt;List&lt;Beer&gt;&gt;
 
-  <span style="color:#75715e">// constructor/injection
-</span><span style="color:#75715e"></span>
-  <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">getName</span>() = <span style="color:#e6db74">&#34;BeerLiveData&#34;</span>
+  <span style=color:#75715e>// constructor/injection
+</span><span style=color:#75715e></span>
+  <span style=color:#66d9ef>override</span> <span style=color:#66d9ef>fun</span> <span style=color:#a6e22e>getName</span>() = <span style=color:#e6db74>&#34;BeerLiveData&#34;</span>
 
   @ReactMethod
-  <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">subscribe</span>() {
+  <span style=color:#66d9ef>fun</span> <span style=color:#a6e22e>subscribe</span>() {
     liveData = repository.listBeers().apply {
-      observeForever(<span style="color:#66d9ef">this</span>)
+      observeForever(<span style=color:#66d9ef>this</span>)
     }
   }
 
   @ReactMethod
-  <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">unsubscribe</span>() =
-    <span style="color:#75715e">// must happen on main thread
-</span><span style="color:#75715e"></span>    Handler(Looper.getMainLooper()).apply {
-      post { liveData.removeObserver(<span style="color:#66d9ef">this</span>) }
+  <span style=color:#66d9ef>fun</span> <span style=color:#a6e22e>unsubscribe</span>() =
+    <span style=color:#75715e>// must happen on main thread
+</span><span style=color:#75715e></span>    Handler(Looper.getMainLooper()).apply {
+      post { liveData.removeObserver(<span style=color:#66d9ef>this</span>) }
     }
 
-  <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">onChanged</span>(beers: List&lt;Beer&gt;) {
-    <span style="color:#66d9ef">val</span> map = Arguments.createMap().apply {
-      putString(<span style="color:#e6db74">&#34;beers&#34;</span>, gson.toJson(beers))
+  <span style=color:#66d9ef>override</span> <span style=color:#66d9ef>fun</span> <span style=color:#a6e22e>onChanged</span>(beers: List&lt;Beer&gt;) {
+    <span style=color:#66d9ef>val</span> map = Arguments.createMap().apply {
+      putString(<span style=color:#e6db74>&#34;beers&#34;</span>, gson.toJson(beers))
     }
 
     getReactApplicationContext()
-      .getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter<span style="color:#f92672">::</span><span style="color:#66d9ef">class</span>.java)
-      .emit(<span style="color:#e6db74">&#34;beersChanged&#34;</span>, map)
+      .getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter<span style=color:#f92672>::</span><span style=color:#66d9ef>class</span>.java)
+      .emit(<span style=color:#e6db74>&#34;beersChanged&#34;</span>, map)
   }
 }
-</code></pre></div><p>First, on the native side, we create a <code>BeerLiveDataModule</code> that exposes a <code>subscribe()</code> and an <code>unsubscribe()</code> method to React Native. Both of these methods are annotated with <code>@ReactMethod</code>, which indicates that we want to expose them to JavaScript. When <code>subscribe()</code> is called, we start observing our <code>BeerRepository</code>’s LiveData. As you probably guessed, when <code>unsubscribe()</code> is called, we do the opposite. Any time LiveData emits an update, we post an event to Javascript via React’s device event emitter. You could certainly do something similar with RxJava as well.</p>
-<p>Once we have our native module ready, we register it in our app’s <code>ReactPackage</code> class, which we created when we integrated React Native into our app.</p>
-<p>Then, on the React Native side:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">BeerList</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">React</span>.<span style="color:#a6e22e">Component</span> {
+</code></pre></div><p>First, on the native side, we create a <code>BeerLiveDataModule</code> that exposes a <code>subscribe()</code> and an <code>unsubscribe()</code> method to React Native. Both of these methods are annotated with <code>@ReactMethod</code>, which indicates that we want to expose them to JavaScript. When <code>subscribe()</code> is called, we start observing our <code>BeerRepository</code>’s LiveData. As you probably guessed, when <code>unsubscribe()</code> is called, we do the opposite. Any time LiveData emits an update, we post an event to Javascript via React’s device event emitter. You could certainly do something similar with RxJava as well.</p><p>Once we have our native module ready, we register it in our app’s <code>ReactPackage</code> class, which we created when we integrated React Native into our app.</p><p>Then, on the React Native side:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>BeerList</span> <span style=color:#66d9ef>extends</span> <span style=color:#a6e22e>React</span>.<span style=color:#a6e22e>Component</span> {
 
-  <span style="color:#a6e22e">componentDidMount</span>() {
-    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">changeListener</span> <span style="color:#f92672">=</span>
-        <span style="color:#a6e22e">DeviceEventEmitter</span>.<span style="color:#a6e22e">addListener</span>(
-          <span style="color:#e6db74">&#39;beersChanged&#39;</span>,
-          <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">onBeersChanged</span>);
-    <span style="color:#a6e22e">NativeModules</span>.<span style="color:#a6e22e">BeerLiveData</span>.<span style="color:#a6e22e">subscribe</span>();
+  <span style=color:#a6e22e>componentDidMount</span>() {
+    <span style=color:#66d9ef>this</span>.<span style=color:#a6e22e>changeListener</span> <span style=color:#f92672>=</span>
+        <span style=color:#a6e22e>DeviceEventEmitter</span>.<span style=color:#a6e22e>addListener</span>(
+          <span style=color:#e6db74>&#39;beersChanged&#39;</span>,
+          <span style=color:#66d9ef>this</span>.<span style=color:#a6e22e>onBeersChanged</span>);
+    <span style=color:#a6e22e>NativeModules</span>.<span style=color:#a6e22e>BeerLiveData</span>.<span style=color:#a6e22e>subscribe</span>();
   }
 
-  <span style="color:#a6e22e">componentWillUnmount</span>() {
-    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">changeListener</span>.<span style="color:#a6e22e">remove</span>();
-    <span style="color:#a6e22e">NativeModules</span>.<span style="color:#a6e22e">BeerLiveData</span>.<span style="color:#a6e22e">unsubscribe</span>();
+  <span style=color:#a6e22e>componentWillUnmount</span>() {
+    <span style=color:#66d9ef>this</span>.<span style=color:#a6e22e>changeListener</span>.<span style=color:#a6e22e>remove</span>();
+    <span style=color:#a6e22e>NativeModules</span>.<span style=color:#a6e22e>BeerLiveData</span>.<span style=color:#a6e22e>unsubscribe</span>();
   }
 
-  <span style="color:#a6e22e">beersChanged</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">event</span>) =&gt; {
-    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">beers</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">parse</span>(<span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">beers</span>);
-    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">setState</span>({<span style="color:#a6e22e">beers</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">beers</span>});
+  <span style=color:#a6e22e>beersChanged</span> <span style=color:#f92672>=</span> (<span style=color:#a6e22e>event</span>) =&gt; {
+    <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>beers</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>JSON</span>.<span style=color:#a6e22e>parse</span>(<span style=color:#a6e22e>event</span>.<span style=color:#a6e22e>beers</span>);
+    <span style=color:#66d9ef>this</span>.<span style=color:#a6e22e>setState</span>({<span style=color:#a6e22e>beers</span><span style=color:#f92672>:</span> <span style=color:#a6e22e>beers</span>});
   }
 
-  <span style="color:#75715e">// ...
-</span><span style="color:#75715e"></span>
+  <span style=color:#75715e>// ...
+</span><span style=color:#75715e></span>
 }
-</code></pre></div><p>First, we add the corresponding listener and subscribe to our native module’s changes in <code>componentDidMount()</code>. In <code>componentWillUnmount()</code>, we once again do the reverse. Whenever we receive an event from the native module, we simply update the state with the new data and the view is rerendered to display it.</p>
-<p>If you only need to asynchronously fetch data on the native side once, you can pass one or more callbacks from Javascript as a parameter to your native module method. Either way, with a bit of effort, you can start benefitting from React Native right away without having to rewrite your entire app.
-<br/><br/></p>
-<h2 id="conclusion">Conclusion</h2>
-<p>So, is it worth it? It depends. To recap, here are some things to consider when deciding if React Native is right for you:</p>
-<ol>
-<li>It’s a big dependency and may limit your ability to upgrade other libraries.</li>
-<li>It’s way different than normal Android development.</li>
-<li>Clean and maintainable cross-platform code requires the commitment of everyone on the team.</li>
-<li>Dynamic code updates are a game changer, but should be used responsibly.</li>
-</ol>
-<p>To be clear, I'm not saying you shouldn't use React Native. I'm working with it now and (mostly) enjoying it. I've also talked to people at several companies who are successfully sharing JavaScript code between their React web apps and React Native mobile apps. And what's more, it's clearly gaining traction where tools like PhoneGap, Cordova, and Xamarin have not.</p>
-
-  </div>
-  
-
-<div class="navigation navigation-single">
-    
-    <a href="https://andydyer.org/blog/2017/09/23/things-ive-learned-since-moving-to-berlin/" class="navigation-prev">
-      <i aria-hidden="true" class="fa fa-chevron-left"></i>
-      <span class="navigation-tittle">Things I&#39;ve Learned Since Moving to Berlin</span>
-    </a>
-    
-    
-    <a href="https://andydyer.org/blog/2017/12/24/introducing-biografy/" class="navigation-next">
-      <span class="navigation-tittle">Introducing Biografy</span>
-      <i aria-hidden="true" class="fa fa-chevron-right"></i>
-    </a>
-    
-</div>
-
-
-  
-
-  
-    
-
-
-</article>
-
-
-        </div>
-        
-    
-
-  
-  
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-48421946-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-
-
-<script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
-
-
-    
-    
-    <script type="text/javascript">
-        
-        hljs.initHighlightingOnLoad();
-    </script>
-    
-
-
-
-
-    
-
-
-
-    </body>
-</html>
+</code></pre></div><p>First, we add the corresponding listener and subscribe to our native module’s changes in <code>componentDidMount()</code>. In <code>componentWillUnmount()</code>, we once again do the reverse. Whenever we receive an event from the native module, we simply update the state with the new data and the view is rerendered to display it.</p><p>If you only need to asynchronously fetch data on the native side once, you can pass one or more callbacks from Javascript as a parameter to your native module method. Either way, with a bit of effort, you can start benefitting from React Native right away without having to rewrite your entire app.<br><br></p><h2 id=conclusion>Conclusion</h2><p>So, is it worth it? It depends. To recap, here are some things to consider when deciding if React Native is right for you:</p><ol><li>It’s a big dependency and may limit your ability to upgrade other libraries.</li><li>It’s way different than normal Android development.</li><li>Clean and maintainable cross-platform code requires the commitment of everyone on the team.</li><li>Dynamic code updates are a game changer, but should be used responsibly.</li></ol><p>To be clear, I&rsquo;m not saying you shouldn&rsquo;t use React Native. I&rsquo;m working with it now and (mostly) enjoying it. I&rsquo;ve also talked to people at several companies who are successfully sharing JavaScript code between their React web apps and React Native mobile apps. And what&rsquo;s more, it&rsquo;s clearly gaining traction where tools like PhoneGap, Cordova, and Xamarin have not.</p></div><div class="navigation navigation-single"><a href=https://andydyer.org/blog/2017/09/23/things-ive-learned-since-moving-to-berlin/ class=navigation-prev><i aria-hidden=true class="fa fa-chevron-left"></i><span class=navigation-tittle>Things I've Learned Since Moving to Berlin</span></a>
+<a href=https://andydyer.org/blog/2017/12/24/introducing-biografy/ class=navigation-next><span class=navigation-tittle>Introducing Biografy</span>
+<i aria-hidden=true class="fa fa-chevron-right"></i></a></div></article></div><script type=application/javascript>var doNotTrack=false;if(!doNotTrack){window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create','UA-48421946-1','auto');ga('send','pageview');}</script><script async src=https://www.google-analytics.com/analytics.js></script><script defer src=https://use.fontawesome.com/releases/v5.11.2/js/all.js integrity=sha384-b3ua1l97aVGAPEIe48b4TC60WUQbQaGi2jqAWM90y0OZXZeyaTCWtBTKtjW2GXG1 crossorigin=anonymous></script></body></html>

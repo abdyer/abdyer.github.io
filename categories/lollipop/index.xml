@@ -1,25 +1,2 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Lollipop on Andy Dyer</title>
-    <link>https://andydyer.org/categories/lollipop/</link>
-    <description>Recent content in Lollipop on Andy Dyer</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sun, 02 Nov 2014 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://andydyer.org/categories/lollipop/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Music Library 3.0 - Material Design Update</title>
-      <link>https://andydyer.org/blog/2014/11/02/music-library-3.0-material-design-update/</link>
-      <pubDate>Sun, 02 Nov 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://andydyer.org/blog/2014/11/02/music-library-3.0-material-design-update/</guid>
-      <description>I started developing Music Library about four years ago when I wanted an app for organizing my record collection. Armed with my Nexus One, Eclipse, and a copy of Apress&amp;rsquo; Pro Android, I spent my nights and weekends learning the inner workings of my now-favorite mobile OS.
-Over the years, Music Library has been a playground of sorts for exploring various open source libraries, patterns, and best practices. While there is still a fair amount of code I would write differently today (I&#39;m looking at you, ContentProvider), the app has been and continues to be an enjoyable side project.</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Lollipop on Andy Dyer</title><link>https://andydyer.org/categories/lollipop/</link><description>Recent content in Lollipop on Andy Dyer</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 02 Nov 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://andydyer.org/categories/lollipop/index.xml" rel="self" type="application/rss+xml"/><item><title>Music Library 3.0 - Material Design Update</title><link>https://andydyer.org/blog/2014/11/02/music-library-3.0-material-design-update/</link><pubDate>Sun, 02 Nov 2014 00:00:00 +0000</pubDate><guid>https://andydyer.org/blog/2014/11/02/music-library-3.0-material-design-update/</guid><description>I started developing Music Library about four years ago when I wanted an app for organizing my record collection. Armed with my Nexus One, Eclipse, and a copy of Apress&amp;rsquo; Pro Android, I spent my nights and weekends learning the inner workings of my now-favorite mobile OS.
+Over the years, Music Library has been a playground of sorts for exploring various open source libraries, patterns, and best practices. While there is still a fair amount of code I would write differently today (I&amp;rsquo;m looking at you, ContentProvider), the app has been and continues to be an enjoyable side project.</description></item></channel></rss>
